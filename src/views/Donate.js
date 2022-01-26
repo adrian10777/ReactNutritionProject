@@ -10,7 +10,7 @@ const Donate = props => {
         <div className='donate'>
             <Container>
                 <Row>
-                    <h5>Donate Here</h5>
+                <h1 className="Hometitle">Donate Here</h1>
                 </Row>
                 <Row>
                     <p>If you would like to donate to help support my ministry to spread the health message to the world just click the button down below. I also take prayers and support by sharing with your friends and family!</p>

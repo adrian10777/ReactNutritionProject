@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
-import { Container, Row, Col, Button, Carousel, Form } from 'react-bootstrap';
+import { Container, Row, Col, Button, Carousel, Form, } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {image1} from "../Static/images/picture-of-me-nutritionsda.jpg"
+import image1 from "../Static/images/picture-of-me-nutritionsda.jpg"
+import image2 from "../Static/images/new-website-benefits-frame-1-e1628729923231.png"
 import '../Static/main.css'
 
 function Home(props) {
@@ -27,12 +28,15 @@ function Home(props) {
         <div className='home'>
             <Container>
                 <Row>
+                    <h1 className="Hometitle">Home</h1>
+                </Row>
+                <Row>
                     <Col>
-                        <img to={image1} alt="picture of Adrian" />
+                        <img id="picmehomepage" src={image1} alt="picture of Adrian" />
                     </Col>
                     <Col>
                         <div>
-                            <h5 className="title1"><b>YOUR NUTRITION REFORMATION</b></h5>
+                            <h4 className="title1"><b>YOUR NUTRITION REFORMATION</b></h4>
                         </div>
                         <div>
                             <p id="p1">
@@ -54,125 +58,64 @@ function Home(props) {
                 </Row>
                 <Row>
                     <Col>
-                        <i className="fa fa-hand-o-down"></i>
+                        <i className="fa fa-hand-o-down" ></i>
                     </Col>
                 </Row>
                 <Row>
                     <Col>
-                        <Button>Services</Button>
+                        <button type="submit" className="btn-btn-primary1">Services</button>
                     </Col>
                 </Row>
-                <Row>
                     <Col>
-                        <img to={image1} alt="picture of Adrian" />
+                        <img id="benefits" src={image2} alt="picture of Adrian" />
                     </Col>
-                    <Col>
-                        <img to={image1} alt="picture of Adrian" />
-                    </Col>
-                    <Col>
-                        <img to={image1} alt="picture of Adrian" />
-                    </Col>
-                    <Col>
-                        <img to={image1} alt="picture of Adrian" />
-                    </Col>
-                    <Col>
-                        <img to={image1} alt="picture of Adrian" />
-                    </Col>
-                    <Row>
-                        <Carousel fade>
-                            <Carousel.Item>
-                                <img
-                                    className="d-block w-100"
-                                    src=""
-                                    alt="First slide"
-                                />
-                                <Carousel.Caption>
-                                    <h3>First slide label</h3>
-                                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                                </Carousel.Caption>
-                            </Carousel.Item>
-                            <Carousel.Item>
-                                <img
-                                    className="d-block w-100"
-                                    src=""
-                                    alt="Second slide"
-                                />
 
-                                <Carousel.Caption>
-                                    <h3>Second slide label</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <Container>
+                        <Row>
+                            <Col>
+                                <Carousel className="carousel" variant="dark">
+                                    <Carousel.Item id="wordscarousel1">
+                                        <img id="carouselpic1" src={image1} alt="picture of Adrian" />
+                                    </Carousel.Item>
+                                <Carousel.Caption id="wordscarousel1">
+                                    <h5>First Slide</h5>
+                                    <p>Nulla HELLO elit libero, a pharetra augue mollis interdum.</p>
                                 </Carousel.Caption>
-                            </Carousel.Item>
-                            <Carousel.Item>
-                                <Carousel.Caption>
-                                    <h3>Third slide label</h3>
-                                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                                </Carousel.Caption>
-                            </Carousel.Item>
-                        </Carousel>
-                    </Row>
-                    <Row>
-                        <Carousel fade>
-                            <Carousel.Item>
-                                <img
-                                    className="d-block w-100"
-                                    src=""
-                                    alt="First slide"
-                                />
-                                <Carousel.Caption>
-                                    <h3>First slide label</h3>
-                                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                                </Carousel.Caption>
-                            </Carousel.Item>
-                            <Carousel.Item>
-                                <img
-                                    className="d-block w-100"
-                                    src=""
-                                    alt="Second slide"
-                                />
+                                </Carousel>
+                            </Col>
+                        </Row>
+                    </Container>
 
-                                <Carousel.Caption>
-                                    <h3>Second slide label</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                </Carousel.Caption>
-                            </Carousel.Item>
-                            <Carousel.Item>
-                                <img
-                                    className="d-block w-100"
-                                    src=""
-                                    alt="Third slide"
-                                />
 
-                                <Carousel.Caption>
-                                    <h3>Third slide label</h3>
-                                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                                </Carousel.Caption>
-                            </Carousel.Item>
-                        </Carousel>
-                    </Row>
-                </Row>
-                <Row>
-                    <Form>
-                        <Form.Group className="mb-3" controlId="formBasicEmail">
-                            <Form.Label>Email address</Form.Label>
-                            <Form.Control type="email" placeholder="Enter email" />
-                            <Form.Text className="text-muted">
-                                We'll never share your email with anyone else.
-                            </Form.Text>
-                        </Form.Group>
-                        <Form.Group className="mb-3" controlId="formBasicPassword">
-                            <Form.Label>Password</Form.Label>
-                            <Form.Control type="password" placeholder="Password" />
-                        </Form.Group>
-                        <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                            <Form.Check type="checkbox" label="Check me out" />
-                        </Form.Group>
-                        <Button variant="primary" type="submit">
-                            Submit
-                        </Button>
-                    </Form>
-                </Row>
-            </Container>
-        </div>);
+
+
+
+
+            <Row>
+                <Form id="form1home">
+                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <h1 className="Hometitle">Contact Me</h1>
+                        <Form.Label>Email address</Form.Label>
+                        <Form.Control type="email" placeholder="Enter email" />
+                        <Form.Text className="text-muted">
+                        </Form.Text>
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="formBasicPassword">
+                        <Form.Label>Name</Form.Label>
+                        <Form.Control type="username" placeholder="Name" />
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="formBasicPassword">
+                        <Form.Label>Last Name</Form.Label>
+                        <Form.Control type="lastname" placeholder="Last Name" />
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                        <Form.Label>Message</Form.Label>
+                        <div className="form-group"> <label className="sr-only">Message</label> <textarea className="form-control" required="" rows="7" placeholder="Write Message"></textarea> </div>
+                    </Form.Group>
+                    <Button className="btn-btn-primary1" variant="primary" type="submit">Submit</Button>
+                </Form>
+            </Row>
+        </Container>
+        </div >);
 }
 export default Home;

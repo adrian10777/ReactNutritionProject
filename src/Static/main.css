@@ -13,17 +13,37 @@
   }
   
   /* nav bar all pages*/
-  nav {
+  .nav-link {
     position: sticky;
-    color: #43ace8;
-    display: block;
-    float: center;
+    display: inline;
+    padding-bottom: 20px;
   }
   
+  #navbarText{
+    justify-content: center;
+    padding-bottom: 60px;
+  }
+
+.mynavlinks{
+  color: #43ace8;
+  padding-bottom: 20px;
+}
+
+/*search in nav */
+.d-flex{
+  padding-left: 20px;
+}
+
   /* Home title */
+  .Hometitle {
+    padding-bottom: 80px;
+    color: #e00000;
+    text-decoration: underline;
+    font-weight: bold;
+  }
   .title1 {
     text-align: right;
-    padding-right: 125px;
+    padding-right: 70px;
     padding-bottom: 40px;
     color: #e00000;
   }
@@ -33,18 +53,21 @@
     padding-top: 40px;
     color: #e00000;
     font-size: x-large;
+    font-weight: bold;
   }
   
   /* Home paragraphs */
   #p1 {
-    text-align: right;
-    padding-right: 100px;
+  
     font-display: center;
+    font-weight: bold;
+    text-align: center;
   }
   
   #p2 {
     text-align: center;
     padding-top: 100px;
+    font-weight: bold;
   }
   
   /* Home page picture */
@@ -53,11 +76,12 @@
       height: 350px;
       border-radius: 5%;
   }
-  
-  #picaboutme{
-    width: 400px;
-    height: 450px;
+
+  #benefits{
+    width: 1200px;
+    padding-right: 50px;
   }
+
   
   
   /* buttons not including form one */
@@ -68,14 +92,17 @@
     background: #e00000;
     color: #ffffff;
     float: auto;
+    font-weight: bold;
+    border-radius: 100px;
+    border: 50px;
   }
   
-  .btn-btn-primary2 {
-    margin: 30px auto;
-    display: block;
-    padding: 11px 32px;
-    background: #e00000;
-    color: #ffffff;
+
+  .fa-hand-o-down{
+    font-size:48px;
+    color:#43ace8;  
+    padding-top: 25px; 
+    padding-bottom: 15px;
   }
   
   .btn-btn-primary1.focus,
@@ -83,73 +110,48 @@
     background-color: transparent;
     color: #4285f4;
     border: 1px solid #4285f4 !important;
+    font-weight: bold;
   }
   
-  .btn-btn-primary2.focus,
-  .btn-btn-primary2:hover {
-    background-color: transparent;
-    color: #4285f4;
-    border: 1px solid #4285f4 !important;
-  }
   
   /*finger pointing down*/
-  
-  /* Home Form*/
-  .formthree {
-    background: #ffffff;
-    align-content: c;
-  }
-  
-  .ptb-100 {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-  
-  .sr-only {
+
+  /* Home carousel */
+
+  #carousel{
     position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
+    object-fit:cover;
+    height: 400px;
+    width: 600px;
   }
-  
-  .formthree .form-control {
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    font-size: 13px;
-    border-bottom: 1px solid #d3d3d3;
-    background: transparent;
-    font-family: "Roboto";
+
+  #carouselpic1{
+    color:white;
+    height: 200px;
+    float: left;
+    padding-left: 120px;
   }
-  
-  form .btn {
-    border-radius: 0 !important;
+
+  .carousel-indicators{
+    padding-top: 30px;
   }
-  
-  .formthree form button.btn {
-    margin: 30px auto;
-    display: block;
-    padding: 11px 32px;
-    background: #e00000;
-    -webkit-transition: all 0.3s ease 0s;
-    -moz-transition: all 0.3s ease 0s;
-    -o-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
-  }
-  
-  .formthree .btn-primary.focus,
-  .formthree .btn-primary:hover {
-    background-color: transparent;
-    color: #4285f4;
-    border: 1px solid #4285f4 !important;
+
+  #wordscarousel1{
+    padding-top: 150px;
+    padding-bottom: 150px;
   }
   /* Home Form ^ */
+
   
   /* ABOUT PAGE */
+
+  #aboutmetitle{
+    padding-top: 20px;
+    padding-bottom: 60px;
+    color: #e00000;
+    font-weight: bold;
+    text-decoration: underline;
+  }
   
   #abouth1 {
     margin: auto;
@@ -158,13 +160,29 @@
     line-height: 30px;
   }
   
+  /* paragraph in about me*/
+  #aboutp1{
+    width: 500px;
+    padding-top: 50px;
+  }
+
+    /* Aboutmepic*/
+
+  
+    #picaboutme{
+      width: 420px;
+      height: 400px;
+      border-radius: 60px;
+    }
+
   /* Paragraph above IMG'S*/
   #title3 {
     text-align: center;
-    padding-top: 40px;
-    color: #e00000;
-    font-size: x-large;
     padding-top: 80px;
+    padding-bottom: 80px;
+    color: #e00000;
+    font-weight: bold;
+    text-decoration: underline;
   }
   
   /* ABOUT IMG'S*/
@@ -172,18 +190,24 @@
     height: 200px;
     width: 200px;
     flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   
   #bachelors {
     height: 200px;
     width: 200px;
-    flex-direction:column
+    flex-direction:column;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   
   #ndtr {
     height: 200px;
     width: 200px;
     flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   
   /*social media buttons*/
@@ -288,5 +312,99 @@
       color: #43ace8;
       float: center;
       padding-top: 20px;
+      font-weight: bold;
   }
   
+
+  /* blog */
+  #blogmaintitle {
+    color: #e00000;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  #blogtitle{
+    color:black;
+    font-weight: bold;
+    padding-bottom: 20px;
+    padding-top: 80px;
+  }
+
+  #blogtitle2{
+    color:black;
+    font-weight: bold;
+    padding-bottom: 20px;
+    padding-top: 80px;
+  }
+
+  #blogtitle3{
+    color:black;
+    font-weight: bold;
+    padding-bottom: 20px;
+    padding-top: 60px;
+  }
+
+  #blogtitle4{
+    color:black;
+    font-weight: bold;
+    padding-bottom: 20px;
+    padding-top: 80px;
+  }
+
+  #timeblog{
+    color:red;
+  }
+
+  #blogbuttons {
+    margin: 30px auto;
+    padding: 11px 53px;
+    background: #43ace8;
+    color: #ffffff;
+    float: auto;
+    font-weight: bold;
+    border-radius: 100px;
+    border: 50px;
+    width: 215px;
+  }
+
+  /* services */
+
+  #serviceunderline{
+    color: #000000;
+    text-decoration: underline;
+    font-weight: bold;
+    padding-bottom: 20px;
+  }
+
+  .fa-check-circle{
+    color:#64BC34;
+    margin-right: 10px;
+    font-size: 1.3em;
+    font-weight: 400;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height:1 ;
+    box-sizing: border-box;
+    
+  }
+
+  #servicestitle{
+    padding-bottom: 80px;
+    color: #e00000;
+    text-decoration: underline;
+    font-weight: bold;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+  }
+
+  #or{
+    padding-bottom: 3px;
+    padding-top: 3px;
+    color: #e00000;
+  }
+
+  #serviceprice{
+    color:#e00000;
+  }

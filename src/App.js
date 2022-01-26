@@ -10,8 +10,11 @@ import Footer from './components/Footer';
 import Home from './views/Home';
 import Services from './views/Services';
 import Blogs from './views/Blogs';
+import Blog1 from './views/Blog1';
 import About from './views/About';
 import Donate from './views/Donate';
+import Cart from './views/Cart';
+
 
 const App = () => {
   // define state for my app using useState
@@ -20,19 +23,29 @@ const App = () => {
   // always use the setter (in this case setfoods) to mutate state -> this will cause a rerender
   const [foods, setFoods] = useState(['Strawberry', 'Blueberries', 'Oranges', 'Lemons']);
 
+
+  // cart state hook -> creation of our initial cart
+  const [cart, setCart] = useState({
+    total: 0,
+    size: 0,
+    items: {}
+  })
+
   return (
     <div className="App">
       <Logo />
-      <Navbar />
+      <Navbar cart={cart} />
 
-      
+
 
       <Routes>
-        <Route path='/' element={<Home foods={foods} setFoods={setFoods}/>}/>
-        <Route path='/services' element={<Services />}/>
-        <Route path='/blogs' element={<Blogs />}/>
-        <Route path='/about' element={<About />}/>
-        <Route path='/donate' element={<Donate />}/>
+        <Route children path='/' element={<Home foods={foods} setFoods={setFoods}/>}/>
+        <Route children path='/services' element={<Services cart={cart} setCart={setCart} />}/>
+        <Route children path='/blogs' element={<Blogs />}/>
+        <Route children path='/blog1' element={<Blog1 />}/>
+        <Route children path='/about' element={<About />}/>
+        <Route children path='/donate' element={<Donate />}/>
+        <Route children path='/cart' element={<Cart cart={cart} setCart={setCart}/>}/>
       </Routes>
 
       <Socialmedia />
@@ -45,3 +58,5 @@ const App = () => {
 
 
 export default App;
+
+// under line for donate <Route children path='/cart' element={<Cart cart={cart} setCart={setCart}/>}/>

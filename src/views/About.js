@@ -2,6 +2,10 @@ import React, { useEffect, useState } from "react";
 import { Container, Row, Col, Button, Carousel, Form } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../Static/main.css'
+import image3 from "../Static/images/ABOUTME.jpg"
+import imagebachelors from "../Static/images/bachelors.png"
+import imageclt from "../Static/images/clt.png"
+import imagendtr from "../Static/images/ndtr.png"
 
 const About = props => {
 
@@ -10,27 +14,44 @@ const About = props => {
         <div className='About'>
             <Container>
                 <Row>
-                    <Col>
-
-                    </Col>
-                    <Col>
-                    <p> My interest in nutrition began in 9th grade after watching a documentary called Food inc where I learned about Monsanto and the detrimental effects they are having on our foods. I  learned the benefits of eating organic foods and my interest in health was sparked up to the point where my whole household became filled with organic products. A couple of years later I became heavily involved in exercise and came to the belief from what others would tell me at the gym, that eating anything, and everything is fine, and I wanted to just get as big as possible and look good on the outside but completely disregard the inside. Over time my friend started taking me to church which is where I met Angelica. She changed my life when she showed me a documentary called What The Health. After watching that I wanted to change my lifestyle immediately for my health.
-                        Around the same time as I was going to church (The Seventh Day Adventist Church) I learned about their impactful health message, and it clicked. I was surprised to learn that the longest living people in the planet are found in the Loma Linda blue zone, and they can live up to 10-14 years longer than the average American! Why? because Seventh day Adventists are bible believing Christians who follow Gods original diet found in Genesis 1:29 which consists of fruits, nuts, seeds, grains, and legumes (vegetables was added later in Genesis 3:18).  So, I thought to myself God designed this diet 6,000 years ago and even designed it before he made us on the 3rd day (Genesis 1:11-12), and it is the only diet in the bible that he called perfect (Genesis 1:31) and Adventists are living the longest and have a great quality of life by following it? I told myself count me in! 
-                        After deciding to go vegan I started to not feel well. I became sick, weak, lost weight, and honestly felt terrible overall. But then I met a Doctor in Original Medicine called Dr. Joseph Bruno who helped me bounce back with some tweaks and after learning what he taught me I came to the realization that I had no idea what I was doing.  Ever since then I have been studying nutrition rigorously and I have concluded that there is too much evidence to support that the vegan diet is the healthiest diet you can be on. With the knowledge that I have learned throughout the years, I did not want anyone making the same mistake that I did and want you to get prepared to thrive on a vegan diet!</p>
-                    </Col>
-                </Row>
-                <Row>
-                    <h6 id="title3">MY CREDENTIALS</h6>
+                    <h1 id="aboutmetitle">ABOUT ME</h1>
                 </Row>
                 <Row>
                     <Col>
+                        <img id="picaboutme" src={image3} alt="aboutmepicture"></img>
                     </Col>
                     <Col>
+                        <p id="aboutp1"> Hi! my name is Adrian Henriquez, and I am passionate about helping others transition to a vegan diet to help them be their best self. Often, transitioning to a vegan diet can help you prevent or heal from many of the diseases prevalent today. You may have noticed that there is a lot of misinformation surrounding this lifestyle, or you may just not know where to even begin which can make the transitioning phase very intimidating. I know this because I made the transition myself. It was quite a bumpy road, but I have dedicated myself into finding the best way to transition successfully and preserve that success! If you are interested in becoming vegan to become your best self I make this transition, go smoothly. I can’t wait to work with you. See you on the other side!</p>
+                    </Col>
+                </Row>
+                <Row>
+                    <h1 id="title3">MY CREDENTIALS</h1>
+                </Row>
+                <Row>
+                    <Col>
+                        <a href="https://www.credly.com/earner/earned/badge/b89508fb-8b1b-4d85-973e-5e7cc7fdc716"><img src={imagebachelors} id="bachelors" alt="bachelorslogo"></img></a>
+                        
                     </Col>
                     <Col>
+                        <a href="https://www.nowleap.com/"><img src={imageclt} id="clt" alt="CLT"></img></a>
+                    </Col>
+                    <Col>
+                        <a href="https://www.credly.com/earner/earned/badge/f43ef009-9db9-40f1-8013-712254ac1abb"><img src={imagendtr} id="ndtr" alt="NDTR"></img></a>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <p>Click Logo!</p>
+                    </Col>
+                    <Col>
+                        <p>Click Logo!</p>
+                    </Col>
+                    <Col>
+                        <p>Click Logo!</p>
                     </Col>
                 </Row>
             </Container>
-            </div>)}
+        </div>
+        )}
 
 export default About;
