@@ -1,9 +1,12 @@
 import React, { useEffect } from "react";
+import { useUser } from 'reactfire';
 import { Container, Row, Col, Button, Carousel, Form, } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import image1 from "../Static/images/picture-of-me-nutritionsda.jpg"
 import image2 from "../Static/images/new-website-benefits-frame-1-e1628729923231.png"
 import '../Static/main.css'
+import '../projectparts/CarouselContainer'
+import CarouselContainer from "../projectparts/CarouselContainer";
 
 function Home(props) {
     // data, properties (props), state -> all things that we can use/control over the course of our component's lifestyle
@@ -19,22 +22,23 @@ function Home(props) {
         props.setFoods(newFoods); // UPDATE STATE AND CAUSE A RERENDER
     };
 
-    // useEffect() hook causes its callback function to run every time the component renders
+    /* // useEffect() hook causes its callback function to run every time the component renders
     useEffect(() => {
         console.log(`Rendered or rerendered Home! Number of foods: ${props.foods.length}.`);
-    });
+    }); */
+
+    //useUser hook to gain access to our current user
+    const { userStatus, data: user } = useUser();
 
     return (
         <div className='home'>
             <Container>
                 <Row>
-                    <h1 className="Hometitle">Home</h1>
+                    {user ? <h1 className="Hometitle"> Welcome, {user.displayName}!</h1> : <h1 className="Hometitle">Home</h1>}
                 </Row>
                 <Row>
                     <Col>
                         <img id="picmehomepage" src={image1} alt="picture of Adrian" />
-                    </Col>
-                    <Col>
                         <div>
                             <h4 className="title1"><b>YOUR NUTRITION REFORMATION</b></h4>
                         </div>
@@ -42,7 +46,7 @@ function Home(props) {
                             <p id="p1">
                                 Hey! My name is Adrian Henriquez, I am the founder of SDA Nutrition, a Registered Dietetic Technician, and a Certified LEAP Therapist. My goal is to assist you in achieving your optimal lifestyle, and reforming your health by utilizing the best proven method which is to be on a Whole Foods vegan diet, so you can thrive!
                             </p>
-                            <button type="submit" className="btn-btn-primary1">Let's Talk</button>
+                            <button onClick={(e) => { e.preventDefault(); window.location.href='https://calendly.com/sdanutrition/15min?month=2022-02'; }} type="submit" id="letstalkbutton" className="btn-btn-primary1">Let's Talk</button>
                         </div>
                     </Col>
                 </Row>
@@ -63,59 +67,44 @@ function Home(props) {
                 </Row>
                 <Row>
                     <Col>
-                        <button type="submit" className="btn-btn-primary1">Services</button>
+                        <button onClick={(e) => { e.preventDefault(); window.location.href='https://sda-nutrition.web.app/services'; }} type="submit" id="homeservicesbutton">Services</button>
                     </Col>
                 </Row>
-                    <Col>
-                        <img id="benefits" src={image2} alt="picture of Adrian" />
+
+
+
+                <Row>
+                    <Col id="colbenefits">
+                        <CarouselContainer id="carouselcontainer"/>
                     </Col>
-
-                    <Container>
-                        <Row>
-                            <Col>
-                                <Carousel className="carousel" variant="dark">
-                                    <Carousel.Item id="wordscarousel1">
-                                        <img id="carouselpic1" src={image1} alt="picture of Adrian" />
-                                    </Carousel.Item>
-                                <Carousel.Caption id="wordscarousel1">
-                                    <h5>First Slide</h5>
-                                    <p>Nulla HELLO elit libero, a pharetra augue mollis interdum.</p>
-                                </Carousel.Caption>
-                                </Carousel>
-                            </Col>
-                        </Row>
-                    </Container>
+                </Row>
 
 
-
-
-
-
-            <Row>
-                <Form id="form1home">
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <h1 className="Hometitle">Contact Me</h1>
-                        <Form.Label>Email address</Form.Label>
-                        <Form.Control type="email" placeholder="Enter email" />
-                        <Form.Text className="text-muted">
-                        </Form.Text>
-                    </Form.Group>
-                    <Form.Group className="mb-3" controlId="formBasicPassword">
-                        <Form.Label>Name</Form.Label>
-                        <Form.Control type="username" placeholder="Name" />
-                    </Form.Group>
-                    <Form.Group className="mb-3" controlId="formBasicPassword">
-                        <Form.Label>Last Name</Form.Label>
-                        <Form.Control type="lastname" placeholder="Last Name" />
-                    </Form.Group>
-                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                        <Form.Label>Message</Form.Label>
-                        <div className="form-group"> <label className="sr-only">Message</label> <textarea className="form-control" required="" rows="7" placeholder="Write Message"></textarea> </div>
-                    </Form.Group>
-                    <Button className="btn-btn-primary1" variant="primary" type="submit">Submit</Button>
-                </Form>
-            </Row>
-        </Container>
+                <Row>
+                    <Form id="form1home">
+                        <Form.Group className="mb-3" controlId="formBasicEmail">
+                            <h1 id="homeformtitle">Contact Me</h1>
+                            <Form.Label>Email address</Form.Label>
+                            <Form.Control type="email" placeholder="Enter email" />
+                            <Form.Text className="text-muted">
+                            </Form.Text>
+                        </Form.Group>
+                        <Form.Group className="mb-3" controlId="formBasicPassword">
+                            <Form.Label>Name</Form.Label>
+                            <Form.Control type="username" placeholder="Name" />
+                        </Form.Group>
+                        <Form.Group className="mb-3" controlId="formBasicPassword">
+                            <Form.Label>Last Name</Form.Label>
+                            <Form.Control type="lastname" placeholder="Last Name" />
+                        </Form.Group>
+                        <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                            <Form.Label>Message</Form.Label>
+                            <div className="form-group"> <label className="sr-only">Message</label> <textarea className="form-control" required="" rows="7" placeholder="Write Message"></textarea> </div>
+                        </Form.Group>
+                        <Button to="https://getform.io/f/d9fea594-49af-4689-a62c-5307e684fb51" id="submitform" method="POST" variant="primary" type="submit">Submit</Button>
+                    </Form>
+                </Row>
+            </Container>
         </div >);
 }
 export default Home;

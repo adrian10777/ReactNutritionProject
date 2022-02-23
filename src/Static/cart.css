@@ -1,3 +1,50 @@
+#checkoutcardid{
+    width: 700px;
+    margin-top:70px;
+    margin-bottom:70px;
+    text-align: center;
+  }
+
+@media (max-width: 795px) {
+    #checkoutcardid{
+      width: 500px;
+    }
+  }
+
+@media (max-width: 600px) {
+    #checkoutcardid{
+      width: 375px;
+      margin: auto;
+    }
+  }
+
+@media (max-width: 413px) {
+    #checkoutcardid{
+      width: 290px;
+      margin-left: 30px;;
+    }
+  }
+
+@media (max-width: 345px) {
+    #checkoutcardid{
+      width: 270px;
+    }
+  }
+
+
+#carttitle{
+    font-weight: bold;
+}
+
+#proceedtopay{
+    background-color: #43ace8;
+}
+
+#checkoutasguest{
+    background-color: #43ace8;
+    margin-bottom: 20px;
+}
+
 .size span {
     font-size: 11px
 }
