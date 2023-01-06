@@ -14,7 +14,7 @@ const Services = props => {
     /* build api call to get programs */
     //makes api call
     const getProgramData = async () => {
-        let response = await axios.get('https://sdanutrition.herokuapp.com/api/programs')
+        let response = await axios.get('https://sdanutrition.fly.dev/api/programs')
         //if you do not control api or u are preparing this for a production environment 
         // you should build error handling into this api cal
         //check if u are getting 200 repsonse code and have backup plan if u dont
@@ -84,8 +84,8 @@ const Services = props => {
                                 <Carousel.Item interval={100000000}>
                                     <Row>
                                         <Col>
-                                            <Form className="serviceform">
-                                                <div className="cardheight card card-pricing popular shadow text-center px-3 mb-4">
+                                            <Form className="serviceform" id="ex2">
+                                                <div className="cardheight card card-pricing popular shadow text-center px-3 mb-4" id="ex1">
                                                     <span style={{backgroundColor: "#43ace8"}} className="h5 w-60 mx-auto px-5 py-2 rounded-bottom text-white shadow-sm" id="servicestitle">{`${program[5].program_name}`}</span>
                                                     <div className="bg-transparent card-header pt-4 border-0">
                                                         <h1 className="h1 font-weight-bold text-center mb-0" id="serviceprice" data-pricing-value="45"><span
