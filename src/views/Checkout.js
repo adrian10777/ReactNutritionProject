@@ -20,7 +20,7 @@ const Checkout = props => {
         if (user){
           udata = user;
         }
-        fetch("https://sdanutrition.herokuapp.com/payments/create-payment-intent", {
+        fetch("https://sdanutrition.fly.dev/payments/create-payment-intent", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify([props.cart, udata]), // modify body to have my cart -> and user?
