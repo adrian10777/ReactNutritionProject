@@ -13,14 +13,6 @@ function Home(props) {
     // component lifestyle: loaded? rendered (shown on screen)? changed state? re-rendered?
     // props.setFoods(['Different Foods']); # bad -> causes infinite rerenders outside of an event/function
     // you cant just use setstudents wherever -> let's put it in a function tied to some event 
-    let addFoods = () => {
-        // addFoods is a function made to mutate the foods state -> it will make some modification to our students state array
-        //then it will use setstudents to mutate that stae
-        // out of place modify the state, then use setState to update and rerender
-        let newFoods = [...props.foods]; // spread operator ... to make a copy of props.foods
-        newFoods.push("Blackberries");
-        props.setFoods(newFoods); // UPDATE STATE AND CAUSE A RERENDER
-    };
 
     /* // useEffect() hook causes its callback function to run every time the component renders
     useEffect(() => {
