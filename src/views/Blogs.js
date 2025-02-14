@@ -38,7 +38,7 @@ const Blogs = props => {
                     </Row>
                     <Row>
                         <Col>
-                            <Button id="blogbuttons" href="http://localhost:3000/ComingSoonBlog">
+                            <Button id="blogbuttons" href="https://sda-nutrition.web.app/ComingSoonBlog">
                                 Read More »
                             </Button>
                         </Col>
@@ -65,7 +65,7 @@ const Blogs = props => {
                     </Row>
                     <Row>
                         <Col>
-                            <Button id="blogbuttons" href="http://localhost:3000/ComingSoonBlog"> 
+                            <Button id="blogbuttons" href="https://sda-nutrition.web.app/ComingSoonBlog"> 
                                 Read More »
                             </Button>
                         </Col>
@@ -93,7 +93,7 @@ const Blogs = props => {
                     </Row>
                     <Row>
                         <Col>
-                            <Button id="blogbuttons" href="http://localhost:3000/ComingSoonBlog">
+                            <Button id="blogbuttons" href="https://sda-nutrition.web.app/ComingSoonBlog">
                                 Read More »
                             </Button>
                         </Col>
@@ -121,7 +121,7 @@ const Blogs = props => {
                     </Row>
                     <Row>
                         <Col>
-                            <Button id="blogbuttons" href="http://localhost:3000/ComingSoonBlog">
+                            <Button id="blogbuttons" href="https://sda-nutrition.web.app/ComingSoonBlog">
                                 Read More »
                             </Button>
                         </Col>
@@ -148,7 +148,7 @@ const Blogs = props => {
                 </Row>
                 <Row>
                     <Col>
-                        <Button id="blogbuttons" href='http://localhost:3000/blog1'>
+                        <Button id="blogbuttons" href='https://sda-nutrition.web.app/blog1'>
                             Read More »
                         </Button>
                     </Col>

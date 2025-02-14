@@ -3,7 +3,7 @@
         "author": "Adrian Henriquez",
         "image1Link": "Static/images/ndtr.png",
         "language": "English",
-        "link": "http://localhost:3000/blog1",
+        "link": "https://sda-nutrition.web.app/blog1",
         "title": "What Are We Designed To Eat?",
         "year": 2023
     },
@@ -11,7 +11,7 @@
         "author": "Adrian Henriquez",
         "image1Link": "Static/images/ndtr.png",
         "language": "English",
-        "link": "http://localhost:3000/",
+        "link": "https://sda-nutrition.web.app/",
         "title": "What are we meant to eat?",
         "year": 2023
     }
