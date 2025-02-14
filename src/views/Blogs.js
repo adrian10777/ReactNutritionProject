@@ -151,9 +151,9 @@ const Blogs = props => {
                         <Button id="blogbuttons" href='https://sda-nutrition.web.app/blog1'>
                             Read More »
                         </Button>
-                        <Button id="blogbuttons" href='http://localhost:3000/blog1'>
+                        {/* <Button id="blogbuttons" href='http://localhost:3000/blog1'>
                             Read More »
-                        </Button>
+                        </Button> */}
                     </Col>
                 </Row>
                 </div>
