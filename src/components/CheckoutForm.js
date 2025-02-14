@@ -1,7 +1,7 @@
 import React from 'react';
 import { useStripe, useElements, PaymentElement } from '@stripe/react-stripe-js';
 import { useContext, useState } from 'react';
-import '../Static/stripe.css';
+import '../CSSFiles/stripe.css';
 import { Navigate } from 'react-router-dom';
 import { DataContext } from '../context/DataProvider';
 

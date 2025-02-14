@@ -1,5 +1,9 @@
 import React from "react";
-import '../Static/cart.css';
+import '../CSSFiles/cart.css';
+import '../CSSFiles/donate.css'
+import '../CSSFiles/header.css'
+import '../CSSFiles/footer.css'
+import '../CSSFiles/socialmedia.css'
 import { useContext } from 'react';
 import { useDatabase, useUser, useAuth } from 'reactfire';
 import { set, ref } from '@firebase/database';
@@ -8,7 +12,6 @@ import { Link } from 'react-router-dom';
 import { DataContext } from "../context/DataProvider";
 import { Container, Row, Col, Button, Carousel, Div, Form } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../Static/main.css'
 
 
 const Cart = (props) => {

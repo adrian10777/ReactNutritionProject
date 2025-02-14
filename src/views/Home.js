@@ -4,9 +4,16 @@ import { Container, Row, Col, Button, Carousel, Form, } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import image1 from "../Static/images/picture-of-me-nutritionsda.jpg"
 import image2 from "../Static/images/new-website-benefits-frame-1-e1628729923231.png"
-import '../Static/main.css'
+import '../CSSFiles/home.css'
+import '../CSSFiles/header.css'
+import '../CSSFiles/footer.css'
+import '../CSSFiles/socialmedia.css'
 import '../projectparts/CarouselContainer'
+import ContactForm from '../components/HomeForm'
 import CarouselContainer from "../projectparts/CarouselContainer";
+import HomeForm from "../components/HomeForm";
+
+
 
 function Home(props) {
     // data, properties (props), state -> all things that we can use/control over the course of our component's lifestyle
@@ -25,14 +32,14 @@ function Home(props) {
     return (
         <div className='home'>
             <Container>
-                <Row>
+                {/* <Row>
                     {user ? <h1 className="Hometitle"> Welcome, {user.displayName}!</h1> : <h1 className="Hometitle">Home</h1>}
-                </Row>
+                </Row> */}
                 <Row>
                     <Col>
-                        <img id="picmehomepage" src={image1} alt="picture of Adrian" />
+                        {/* <img id="picmehomepage" src={image1} alt="picture of Adrian" /> */}
                         <div>
-                            <h4 className="title1"><b>YOUR NUTRITION REFORMATION</b></h4>
+                            <h4 className="title1"><b>HOW TO THRIVE ON A VEGAN DIET</b></h4>
                         </div>
                         <div>
                             <p id="p1">
@@ -63,16 +70,25 @@ function Home(props) {
                     </Col>
                 </Row>
 
-
-
                 <Row>
                     <Col id="colbenefits">
                         <CarouselContainer id="carouselcontainer"/>
                     </Col>
                 </Row>
 
-
                 <Row>
+                    <Col>
+                    <HomeForm />
+                    </Col>
+                </Row>
+
+                {/* <Row>
+                    <Col>
+                        <ContactForm />
+                    </Col>
+                </Row> */}
+                
+                {/* <Row>
                     <Form id="form1home">
                         <Form.Group className="mb-3" controlId="formBasicEmail">
                             <h1 id="homeformtitle">Contact Me</h1>
@@ -95,7 +111,8 @@ function Home(props) {
                         </Form.Group>
                         <Button to="https://getform.io/f/d9fea594-49af-4689-a62c-5307e684fb51" id="submitform" method="POST" variant="primary" type="submit">Submit</Button>
                     </Form>
-                </Row>
+                </Row> */}
+
             </Container>
         </div >);
 }

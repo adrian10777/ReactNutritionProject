@@ -5,7 +5,10 @@ import { set, ref } from '@firebase/database';
 import { DataContext } from '../context/DataProvider';
 import { Container, Row, Col, Button, Carousel, Div, Form } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../Static/main.css'
+import '../CSSFiles/paymentconfirmation.css'
+import '../CSSFiles/header.css'
+import '../CSSFiles/footer.css'
+import '../CSSFiles/socialmedia.css'
 
 
 let PaymentConfirmation = props => {

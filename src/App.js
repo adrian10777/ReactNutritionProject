@@ -15,12 +15,17 @@ import Blog1 from './views/Blog1';
 import About from './views/About';
 import Donate from './views/Donate';
 import Cart from './views/Cart';
+import ComingSoonBlog from './views/ComingSoonBlog';
 import { get, child, ref, set } from 'firebase/database';
 import Checkout from './views/Checkout';
 import PaymentConfirmation from './components/PaymentConfirmation';
 import { DataContext } from './context/DataProvider';
+import SearchBar from './projectparts/SearchBar';
+import SearchData from './Data.json'
 
 const App = () => {
+
+
   const db = useDatabase();
   const { data: user } = useUser();
   const { checkoutSignin } = useContext(DataContext);
@@ -29,7 +34,7 @@ const App = () => {
   // const [<state_variable_name>, <setter function>] = useState(<initial_value>);
   // DO NOT DIRECTLY MUTATE STATE (aka dont directly redefine a state varaible)
   // always use the setter (in this case setfoods) to mutate state -> this will cause a rerender
-  const [foods, setFoods] = useState(['Strawberry', 'Blueberries', 'Oranges', 'Lemons']);
+
 
 
   // cart state hook -> creation of our initial cart
@@ -76,16 +81,18 @@ const App = () => {
     <div className="App">
       <Logo />
       <Navbar cart={cart} />
+      {/* <SearchBar placeholder="Search..." data={SearchData} /> */}
  
 
 
       <Routes>
-        <Route children path='/' element={<Home foods={foods} setFoods={setFoods} />} />
+        <Route children path='/' element={<Home />} />
         <Route children path='/services' element={<Services cart={cart} setCart={setCart} />} />
         <Route children path='/blogs' element={<Blogs />} />
         <Route children path='/blog1' element={<Blog1 />} />
+        <Route children path='ComingSoonBlog' element={<ComingSoonBlog />} />
         <Route children path='/about' element={<About />} />
-        <Route children path='/donate' element={<Donate cart={cart} setCart={setCart} />} />
+        {/* <Route children path='/donate' element={<Donate cart={cart} setCart={setCart} />} /> */}
         <Route children path='/cart' element={<Cart cart={cart} setCart={setCart} />} />
         <Route children path='/checkout' element={<Checkout cart={cart} setCart={setCart} />} />
         <Route children path='/confirmation' element={<PaymentConfirmation cart={cart} setCart={setCart} />} />
@@ -97,8 +104,6 @@ const App = () => {
 
   );
 }
-
-
 
 export default App;
 

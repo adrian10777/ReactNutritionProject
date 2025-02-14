@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Container, Row, Col, Button, Carousel, Form } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../Static/main.css'
+
 
 const FreeMealPlan = props => {
 

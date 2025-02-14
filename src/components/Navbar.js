@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import '../Static/main.css'
+import '../CSSFiles/header.css'
+import '../CSSFiles/footer.css'
 import { Container, Nav, Navbar, NavDropdown, Offcanvas, Row, Col, Button, Form, FormControl } from 'react-bootstrap';
 import { useAuth, useUser, useSigninCheck } from 'reactfire';
 import { GoogleAuthProvider, signInWithPopup, signOut } from 'firebase/auth';
@@ -40,7 +41,8 @@ const Navbar_ = props => {
 
 
     <Container>
-      <Row>
+
+      {/* <Row>
         <Col id='signinout'>
           <div>
             <Link className='nav-link' id="shopbutton" to={props.cart.size ? '/cart' : '/shop'}><i className="fa fa-shopping-cart"></i> | {props.cart.size ? `${props.cart.size} | $${props.cart.total}` : 'Empty'}</Link>
@@ -58,7 +60,7 @@ const Navbar_ = props => {
           </div>
         </Col>
       </Row>
-
+ */}
 
 
       <Navbar id="navbartoggle" expand={false}>
@@ -79,7 +81,7 @@ const Navbar_ = props => {
           <Nav.Link href="/about">About Me</Nav.Link>
           <Nav.Link href="/blogs">Blogs</Nav.Link>
           {/* <Nav.Link href="/freemealplan">Free Meal Plan</Nav.Link> */}
-          <Nav.Link href="/donate">Donate</Nav.Link>
+          {/* <Nav.Link href="/donate">Donate</Nav.Link> */}
           {/* <NavDropdown title="Dropdown" id="offcanvasNavbarDropdown">
             <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
             <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
@@ -116,15 +118,15 @@ const Navbar_ = props => {
           <Link className="nav-link mynavlinks" to="/about">About Me</Link>
           <Link className="nav-link mynavlinks" to="/blogs">Blogs</Link>
           {/* <Link className="nav-link mynavlinks" to="/freemealplan">Free Meal Plan</Link> */}
-          <Link className="nav-link mynavlinks" to="/donate">Donate</Link>
+          {/* <Link className="nav-link mynavlinks" to="/donate">Donate</Link> */}
         </Col>
       </Row>
 
-      <Row>
+      {/* <Row>
         <Col>
           <SearchBar placeholder="Search..." />
         </Col>
-      </Row>
+      </Row> */}
 
     </Container >
   )

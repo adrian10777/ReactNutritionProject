@@ -1,0 +1,35 @@
+/* Donate */
+
+#Donatebutton {
+    margin: 30px auto;
+    display: block;
+    padding: 11px 53px;
+    background: #e00000;
+    color: #ffffff;
+    float: auto;
+    font-weight: bold;
+    border-radius: 100px;
+    border: 50px;
+    margin-top: 40px;
+  }
+  
+  #Donatebutton:focus,
+  #Donatebutton:hover {
+    background-color: transparent;
+    color: #4285f4;
+    border: 1px solid #4285f4 !important;
+    font-weight: bold;
+  }
+  
+  #donatebuttonname{
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+  }
+  
+  #donateform{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }

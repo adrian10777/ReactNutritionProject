@@ -9,7 +9,7 @@ import image5 from '../Static/imagesbenefits/weightloss.jpg'
 const CarouselContainer = () => {
     return (
         <Carousel fade={true} className="carousel">
-  <Carousel.Item interval={100000000}>
+  <Carousel.Item interval={3000}>
     <img
       id="carouselbenefits1"
       src= {image1}
@@ -19,7 +19,7 @@ const CarouselContainer = () => {
       <h3 id="carouseltitle1" >New Amazing Foods!</h3>
     </Carousel.Caption>
   </Carousel.Item>
-  <Carousel.Item interval={100000000}>
+  <Carousel.Item interval={3000}>
     <img
       id="carouselbenefits2"
       src= {image2}
@@ -29,7 +29,7 @@ const CarouselContainer = () => {
       <h3 id="carouseltitle2">Increase In Energy!</h3>
     </Carousel.Caption>
   </Carousel.Item>
-  <Carousel.Item interval={100000000}>
+  <Carousel.Item interval={3000}>
     <img
       id="carouselbenefits3"
       src= {image3}
@@ -39,7 +39,7 @@ const CarouselContainer = () => {
       <h3 id="carouseltitle3">Healthier Gut And Brain!</h3>
     </Carousel.Caption>
   </Carousel.Item>
-  <Carousel.Item interval={100000000}>
+  <Carousel.Item interval={3000}>
     <img
       id="carouselbenefits4"
       src= {image4}
@@ -49,7 +49,7 @@ const CarouselContainer = () => {
       <h3 id="carouseltitle4">Decreased Risk Of Chronic Diseases!</h3>
     </Carousel.Caption>
   </Carousel.Item>
-  <Carousel.Item interval={100000000}>
+  <Carousel.Item interval={3000}>
     <img
       id="carouselbenefits5"
       src= {image5}

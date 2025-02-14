@@ -1,0 +1,10 @@
+/*footer* all pages*/
+
+#content-wrap {
+    position: sticky;
+    color: #43ace8;
+    float: center;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  

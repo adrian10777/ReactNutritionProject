@@ -1,0 +1,513 @@
+
+  
+  /* Home title */
+  .Hometitle {
+    margin-bottom: 60px;
+    color: #43ace8;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 640px) {
+    .Hometitle {
+      margin: auto;
+      font-size: 25px;
+      margin-top: 30px;
+      margin-bottom: 80px;
+    }
+  }
+  
+  .title1 {
+    margin-top: 120px;
+    margin-bottom: 40px;
+    color: #43ace8;
+    font-size: x-large;
+    text-align: center;
+  }
+  
+  /* color: #272add; */
+  
+  @media (max-width: 640px) {
+    .title1 {
+      margin: auto;
+      font-size: 21px;
+      margin-top: 60px;
+      margin-bottom: 40px;
+    }
+  }
+  
+  #title2 {
+    text-align: center;
+    margin-top: 40px;
+    color: #43ace8;
+    font-size: x-large;
+    font-weight: bold;
+  }
+  
+  /* Home paragraphs */
+  #p1 {
+    text-align: center;
+    width: 70%;
+    line-height: 30px;
+    margin: 0px;
+    margin: auto;
+  }
+  
+  @media (max-width: 640px) {
+    #p1 {
+      line-height: 200%;
+      width: 90%;
+    }
+  }
+  
+  #p2 {
+    width: 70%;
+    line-height: 30px;
+    margin: 0px;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  @media (max-width: 640px) {
+    #p2 {
+      line-height: 200%;
+      width: 90%;
+    }
+  }
+  
+  /* Home page picture */
+  #picmehomepage {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: -10px;
+  }
+  
+  /* buttons not including form one */
+  .btn-btn-primary1 {
+    margin: 30px auto;
+    display: block;
+    padding: 11px 53px;
+    background: #e00000;
+    color: #ffffff;
+    float: auto;
+    font-weight: bold;
+    border-radius: 100px;
+    border: 50px;
+  }
+  
+  #homeservicesbutton {
+    margin: 30px auto;
+    display: block;
+    padding: 11px 53px;
+    background: #e00000;
+    color: #ffffff;
+    float: auto;
+    font-weight: bold;
+    border-radius: 100px;
+    border: 50px;
+  }
+  .readmorebutton {
+      margin: 15px auto;
+      display: block;
+      padding: 5px 25px;
+      background: #e00000;
+      color: #ffffff;
+      float: auto;
+      font-weight: bold;
+      border-radius: 100px;
+      border: 50px;
+  }
+  
+  @media (max-width: 640px) {
+    #homeservicesbutton {
+      margin-bottom: 60px;
+    }
+  }
+  
+  #homeservicesbutton:focus,
+  #homeservicesbutton:hover {
+    background-color: transparent;
+    color: #4285f4;
+    border: 1px solid #4285f4 !important;
+    font-weight: bold;
+  }
+  
+  
+  @media (max-width: 640px) {
+    #letstalkbutton {
+      margin-bottom: 0px;
+    }
+  }
+  
+  .fa-hand-o-down {
+    font-size: 48px;
+    color: #43ace8;
+    padding-top: 25px;
+    padding-bottom: 15px;
+  }
+  
+  #letstalkbutton {
+    margin: 30px auto;
+    display: block;
+    padding: 11px 53px;
+    background: #e00000;
+    color: #ffffff;
+    float: auto;
+    font-weight: bold;
+    border-radius: 100px;
+    border: 50px;
+  }
+  
+  
+  #letstalkbutton:focus,
+  #letstalkbutton:hover {
+    background-color: transparent;
+    color: #4285f4;
+    border: 1px solid #4285f4 !important;
+    font-weight: bold;
+  }
+  
+  
+  /*finger pointing down*/
+  
+  /* Home carousel */
+  
+  #carouselbenefits1{
+    height: 200px;
+    width: 300px;
+    margin-top: 100px;
+    object-fit: cover;
+  }
+  @media (max-width: 375px) {
+    #carouselbenefits1{
+      height: 150px;
+      width: 210px;
+      margin-top: 75px;
+    }
+  }
+  
+  @media (max-width: 301px) {
+    #carouselbenefits1{
+      width: 140px;
+      height: 125px;
+      margin-top: 50px;
+    }
+  }
+  
+  
+  @media (max-width: 275px) {
+    #carouselbenefits1{
+      height: 125px;
+      width: 200px;
+    }
+  }
+  
+  #carouselbenefits2{
+    height: 350px;
+    width: 300px;
+  }
+  
+  @media (max-width: 301px) {
+    #carouselbenefits2{
+      width: 350px;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    #carouselbenefits2{
+      width: 250px;
+    }
+  }
+  
+  #carouselbenefits3{
+    height: 200px;
+    width: 400px;
+    margin-top: 100px;
+  
+  }
+  
+  @media (max-width: 301px) {
+    #carouselbenefits3{
+      width: 350px;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    #carouselbenefits3{
+      width: 250px;
+    }
+  }
+  
+  #carouselbenefits4{
+    height: 400px;
+    width: 500px;
+  
+  }
+  
+  @media (max-width: 640px) {
+    #carouselbenefits4 {
+      height: 300px;
+      width: 400px;
+      margin-top: 0px;
+    }
+  }
+  
+  @media (max-width: 301px) {
+    #carouselbenefits4{
+      width: 350px;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    #carouselbenefits4{
+      width: 250px;
+    }
+  }
+  
+  #carouselbenefits5{
+    height: 200px;
+    width: 300px;
+    margin-top: 100px;
+  }
+  
+  @media (max-width: 301px) {
+    #carouselbenefits5{
+      width: 350px;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    #carouselbenefits5{
+      width: 250px;
+    }
+  }
+  
+  #carouseltitle1{
+    margin-bottom: 175px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    float: center;
+  }
+  
+  @media (max-width: 275px) {
+    #carouseltitle1{
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+   div > a.carousel-control-prev,
+  div > a.carousel-control-next
+  {
+  background: transparent;
+  }
+  
+  @media (max-width: 300px) {
+    #carouseltitle1{
+      margin-bottom: 0px;
+      margin-right: 40px;
+      width: 130px;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    #carouseltitle1{
+      margin-bottom: 100px;
+      margin-right: 40px;
+      width: 230px;
+    }
+  }
+  
+  #carouseltitle2{
+    margin-bottom: 260px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  @media (max-width: 300px) {
+    #carouseltitle2{
+      text-align: center;
+      justify-content: center;
+      margin: auto;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    #carouseltitle2{
+      margin-bottom: 100px;
+      margin-right: 40px;
+      width: 230px;
+      
+    }
+  }
+  
+  #carouseltitle3,
+  #carouseltitle5{
+    margin-bottom: 175px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  @media (max-width: 300px) {
+    #carouseltitle3{
+      text-align: center;
+      justify-content: center;
+      margin: auto;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    #carouseltitle3{
+      margin-bottom: 100px;
+      margin-right: 40px;
+      width: 230px;
+      
+    }
+  }
+  
+  
+  #carouseltitle4{
+    margin-bottom: 280px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  @media (max-width: 640px) {
+    #carouseltitle2,
+    #carouseltitle3,
+    #carouseltitle5{
+      margin-bottom: 200px;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    #carouseltitle2{
+      margin-bottom: 250px;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    #carouseltitle4 {
+      margin-bottom: 200px;
+    }
+  }
+  
+  .carousel-indicators{
+    display: none;
+    
+  }
+  
+  .carousel-control-prev-icon{
+    filter: invert(100%);
+    margin-right: 40px;
+    
+  }
+  
+  @media (max-width: 301px) {
+    .carousel-control-prev-icon{
+      margin-right: 20px;
+      width: 100px;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    .carousel-control-prev-icon{
+      margin-right: 20px;
+      width: 100px;
+    }
+  }
+  
+  .carousel-control-next-icon{
+    margin-left: 40px;
+    filter: invert(100%);
+  }
+  
+  @media (max-width: 301px) {
+    .carousel-control-next-icon{
+      margin-left: 20px;
+      width: 100px;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    .carousel-control-next-icon{
+      margin-left: 20px;
+      width: 100px;
+    }
+  }
+  
+  #colbenefits{
+    height:295px;
+    margin-top: 0px;
+    margin-bottom: 250px;
+  }
+  
+  @media (max-width: 640px) {
+    #colbenefits{
+      height: 205px;
+      margin-bottom: 50px;
+      margin-top: 50px;
+    }
+  }
+  
+   /* form css */
+  #form1home{
+    margin-top: 100px;
+    width: 60%;
+    margin: auto;
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+  }
+  
+  @media (max-width: 640px) {
+    #form1home{
+      margin-top: 175px;
+      width: 90%;
+
+    }
+  }
+
+
+
+
+  #homeformtitle {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding-top: 40px;
+    font-weight: bold;
+    color: #43ace8;
+    font-size: 30px;
+  }
+  
+  #submitform {
+    margin: 30px auto;
+    display: block;
+    padding: 11px 53px;
+    background: #e00000;
+    color: #ffffff;
+    float: auto;
+    font-weight: bold;
+    border-radius: 100px;
+    border: 50px;
+    margin-top: 40px;
+  }
+  
+  #form1home .form-group {
+    margin-bottom: 40px;  /* Add more space between form fields */
+  }
+  
+  #submitform.focus,
+  #submitform:hover {
+    background-color: transparent;
+    color: #4285f4;
+    border: 1px solid #4285f4 !important;
+    font-weight: bold;
+  }
+  
+  /* Home Form ^ */

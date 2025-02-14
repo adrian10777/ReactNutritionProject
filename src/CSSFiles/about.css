@@ -1,0 +1,91 @@
+
+/* ABOUT PAGE */
+
+#aboutmetitle {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    color:#43ace8;
+    font-weight: bold;
+    margin: auto;
+  }
+  
+  #abouth1 {
+    margin: auto;
+    font-size: small;
+    text-align: right;
+    line-height: 30px;
+  }
+  
+  /* paragraph in about me*/
+  #aboutp1 {
+    width: 600px;
+    padding-top: 50px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  @media (max-width: 720px) {
+    #aboutp1{
+      width: 500px;
+    }
+  }
+  
+  @media (max-width: 535px) {
+    #aboutp1{
+      width: 400px;
+    }
+  }
+  
+  @media (max-width:440px) {
+    #aboutp1{
+      width: 300px;
+    }
+  }
+  
+  @media (max-width:330px) {
+    #aboutp1{
+      width: 200px;
+    }
+  }
+  /* Aboutmepic*/
+  
+  #picaboutme {
+    margin-top: 120px;
+    /* width: 275px; */
+    height: 290px;
+    border-radius: 200px;
+  }
+  
+  /* Paragraph above IMG'S*/
+  #title3 {
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color:#43ace8;
+    font-weight: bold;
+  }
+  
+  /* ABOUT IMG'S*/
+  #clt {
+    height: 200px;
+    width: 200px;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  #bachelors {
+    height: 200px;
+    width: 200px;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  #ndtr {
+    height: 200px;
+    width: 200px;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }

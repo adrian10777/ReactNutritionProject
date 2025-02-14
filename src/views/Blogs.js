@@ -1,20 +1,24 @@
 import React, { useEffect, useState } from "react";
 import { Container, Row, Col, Button, Carousel, Div, Form } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../Static/main.css'
+import '../CSSFiles/blogs.css'
+import '../CSSFiles/header.css'
+import '../CSSFiles/footer.css'
+import '../CSSFiles/socialmedia.css'
+import '../views/ComingSoonBlog'
 
 const Blogs = props => {
 
     return (
-        <Container>
-            <Row>
+        <Container className = "cardBlogs">
+            {/* <Row>
                 <Col>
                     <div className='blog'>
-                        <h1 id="blogmaintitle">My Blogs</h1>
+                        <h1 id="blogmaintitle">Blogs</h1>
                     </div>
                 </Col>
-            </Row>
-
+            </Row> */}
+{/* 
             <Form>
                 <div className="cardheight card card-pricing popular shadow text-center px-3 mb-4">
                     <Row>
@@ -24,7 +28,7 @@ const Blogs = props => {
                     </Row>
                     <Row>
                         <Col>
-                            <p id="timeblog">October 19, 2021 / 3 minutes of reading</p>
+                             <p id="timeblog">October 19, 2021 / 3 minutes of reading</p> 
                         </Col>
                     </Row>
                     <Row>
@@ -34,7 +38,7 @@ const Blogs = props => {
                     </Row>
                     <Row>
                         <Col>
-                            <Button id="blogbuttons" onClick={(e) => { e.preventDefault(); window.location.href='https://nutritionsda.com/the-addition-of-vegetables-in-the-human-diet/'; }}>
+                            <Button id="blogbuttons" href="http://localhost:3000/ComingSoonBlog">
                                 Read More »
                             </Button>
                         </Col>
@@ -51,7 +55,7 @@ const Blogs = props => {
                     </Row>
                     <Row>
                         <Col>
-                            <p id="timeblog">October 13, 2021 / 4 minutes of reading</p>
+                             <p id="timeblog">October 13, 2021 / 4 minutes of reading</p>
                         </Col>
                     </Row>
                     <Row>
@@ -61,7 +65,7 @@ const Blogs = props => {
                     </Row>
                     <Row>
                         <Col>
-                            <Button id="blogbuttons">
+                            <Button id="blogbuttons" href="http://localhost:3000/ComingSoonBlog"> 
                                 Read More »
                             </Button>
                         </Col>
@@ -79,7 +83,7 @@ const Blogs = props => {
                     </Row>
                     <Row>
                         <Col>
-                            <p id="timeblog">October 11, 2021 / 4 minutes of reading</p>
+                             <p id="timeblog">October 11, 2021 / 4 minutes of reading</p>
                         </Col>
                     </Row>
                     <Row>
@@ -89,14 +93,14 @@ const Blogs = props => {
                     </Row>
                     <Row>
                         <Col>
-                            <Button id="blogbuttons">
+                            <Button id="blogbuttons" href="http://localhost:3000/ComingSoonBlog">
                                 Read More »
                             </Button>
                         </Col>
                     </Row>
                 </div>
             </Form>
-
+*/}
 
             <Form>
                 <div className="cardheight card card-pricing popular shadow text-center px-3 mb-4">
@@ -107,7 +111,7 @@ const Blogs = props => {
                     </Row>
                     <Row>
                         <Col>
-                            <p id="timeblog">October 4, 2021 / 1 minute of reading</p>
+                            {/* <p id="timeblog">October 4, 2021 / 1 minute of reading</p> */}
                         </Col>
                     </Row>
                     <Row>
@@ -117,7 +121,7 @@ const Blogs = props => {
                     </Row>
                     <Row>
                         <Col>
-                            <Button id="blogbuttons">
+                            <Button id="blogbuttons" href="http://localhost:3000/ComingSoonBlog">
                                 Read More »
                             </Button>
                         </Col>
@@ -134,7 +138,7 @@ const Blogs = props => {
                 </Row>
                 <Row>
                     <Col>
-                        <p id="timeblog">October 1, 2021 / 2 minutes of reading</p>
+                        <p id="timeblog">February 2, 2025 / 2 minutes of reading</p>
                     </Col>
                 </Row>
                 <Row>
@@ -144,13 +148,14 @@ const Blogs = props => {
                 </Row>
                 <Row>
                     <Col>
-                        <Button id="blogbuttons">
+                        <Button id="blogbuttons" href='http://localhost:3000/blog1'>
                             Read More »
                         </Button>
                     </Col>
                 </Row>
                 </div>
             </Form>
+
         </Container>
     )
 }
