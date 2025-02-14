@@ -54,7 +54,7 @@ const Blog1 = props => {
 
       <div className="blog-content">
         <article className="blog-post">
-          <p className="post-meta">October 1, 2021 / 2 minutes of reading</p>
+          <p className="post-meta">February 13, 2025 / 2 minutes of reading</p>
           <div className="post-image">
             <img id="watermelon" src={eating} alt="blog-img" />
           </div>
