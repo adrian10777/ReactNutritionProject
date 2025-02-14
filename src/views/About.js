@@ -16,7 +16,7 @@ const About = props => {
 
     return (
         <div className='About'>
-            <Container>
+            <Container id="about-container">
                 <Row>
                     <Col>
                         {/* <img id="picaboutme" src={image3} alt="aboutmepicture"></img> */}

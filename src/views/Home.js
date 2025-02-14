@@ -31,7 +31,7 @@ function Home(props) {
 
     return (
         <div className='home'>
-            <Container>
+            <Container id="home-container">
                 {/* <Row>
                     {user ? <h1 className="Hometitle"> Welcome, {user.displayName}!</h1> : <h1 className="Hometitle">Home</h1>}
                 </Row> */}
