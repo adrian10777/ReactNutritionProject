@@ -25,7 +25,7 @@ const About = props => {
                 </Row>
                 <Row>
                     <Col>
-                        <p id="aboutp1"> Hi! my name is Adrian Henriquez, and I am passionate about helping others transition to a vegan diet to help them be their best self. Often, transitioning to a vegan diet can help you prevent or heal from many of the diseases prevalent today. You may have noticed that there is a lot of misinformation surrounding this lifestyle, or you may just not know where to even begin which can make the transitioning phase very intimidating. I know this because I made the transition myself. It was quite a bumpy road, but I have dedicated myself into finding the best way to transition successfully and preserve that success! If you are interested in becoming vegan to become your best self I make this transition, go smoothly. I can’t wait to work with you. See you on the other side!</p>
+                        <p id="aboutp1"> Hi! My name is Adrian Henriquez, and I’m passionate about helping others transition to a vegan diet so they can become their best selves. Switching to a vegan lifestyle can often help prevent or even heal many of today’s prevalent diseases. However, with so much misinformation out there, you may feel overwhelmed or unsure of where to begin. I understand—because I’ve been there myself. My own transition was a bumpy road, but through dedication and experience, I’ve discovered the best ways to transition successfully and maintain long-term success. If you’re ready to go vegan and transform your health, I’m here to make the process smooth and sustainable. I can’t wait to work with you—see you on the other side!</p>
                     </Col>
                 </Row>
                 <Row>

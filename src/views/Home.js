@@ -43,7 +43,7 @@ function Home(props) {
                         </div>
                         <div>
                             <p id="p1">
-                                Hey! My name is Adrian Henriquez, I am the founder of SDA Nutrition, a Registered Dietetic Technician, and a Certified LEAP Therapist. My goal is to assist you in achieving your optimal lifestyle, and reforming your health by utilizing the best proven method which is to be on a Whole Foods vegan diet, so you can thrive!
+                            Hey! My name is Adrian Henriquez. I am the founder of SDA Nutrition, a Registered Dietetic Technician, and a Certified LEAP Therapist. My goal is to assist you in achieving your optimal lifestyle and transforming your health by utilizing the best proven method—following a whole foods, plant-based (vegan) diet—so you can thrive!
                             </p>
                             <button onClick={(e) => { e.preventDefault(); window.location.href='https://calendly.com/sdanutrition/15min?month=2022-02'; }} type="submit" id="letstalkbutton" className="btn-btn-primary1">Let's Talk</button>
                         </div>
@@ -51,7 +51,7 @@ function Home(props) {
                 </Row>
                 <Row>
                     <Col>
-                        <h6 id="p2">Are you exhausted with all the confusion? Are you tired of being sick and lethargic? not sure what to eat to be your best self? Your answers are a click away!</h6>
+                        <h6 id="p2">Are you exhausted by all the confusion? Tired of feeling sick and sluggish? Unsure of what to eat to become your best self? Your answers are just a click away!</h6>
                     </Col>
                 </Row>
                 <Row>

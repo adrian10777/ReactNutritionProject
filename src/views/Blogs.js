@@ -102,7 +102,7 @@ const Blogs = props => {
             </Form>
 */}
 
-            <Form>
+            {/* <Form>
                 <div className="cardheight card card-pricing popular shadow text-center px-3 mb-4">
                     <Row>
                         <Col>
@@ -111,7 +111,7 @@ const Blogs = props => {
                     </Row>
                     <Row>
                         <Col>
-                            {/* <p id="timeblog">October 4, 2021 / 1 minute of reading</p> */}
+                            <p id="timeblog">October 4, 2021 / 1 minute of reading</p>
                         </Col>
                     </Row>
                     <Row>
@@ -127,7 +127,7 @@ const Blogs = props => {
                         </Col>
                     </Row>
                 </div>
-            </Form>
+            </Form> */}
 
             <Form>
             <div className="cardheight card card-pricing popular shadow text-center px-3 mb-4">
