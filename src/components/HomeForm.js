@@ -131,6 +131,11 @@ function HomeForm() {
                 if (data.message) {
                     console.log(data.message);
                     alert("Email sent successfully!");
+
+                    setEmail("");
+                    setFirstName("");
+                    setLastName("");
+                    setMessage("");
                 } else {
                     console.error("No 'message' property in response:", data);
                     alert("Email sent, but no confirmation message received.");
