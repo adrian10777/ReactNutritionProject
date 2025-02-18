@@ -529,7 +529,7 @@
   }
   
   /* Restore red when focus/hover is removed */
-  #submitform:not(:hover):not(:focus) {
+  #submitform:not(:hover) {
     background-color: #e00000;
     color: white;
   }

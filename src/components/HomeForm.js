@@ -102,6 +102,7 @@ function HomeForm() {
     //function that gets called when the user submits the form
     const handleSubmit = async (e) => {
         e.preventDefault();
+        alert('Email has been successfully sent, if you do not hear back within two days please email me at sdanutrition@nutritionsda.org...')
     
         // Validate form fields
         if (!email || !firstName || !lastName || !message) {
@@ -130,7 +131,7 @@ function HomeForm() {
                 console.log("Response data:", data);  // Log the entire response
                 if (data.message) {
                     console.log(data.message);
-                    alert("Email sent successfully!");
+                    // alert("Email sent successfully!");
 
                     setEmail("");
                     setFirstName("");
