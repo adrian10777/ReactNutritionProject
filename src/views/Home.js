@@ -4,6 +4,7 @@ import { Container, Row, Col, Button, Carousel, Form, } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import image1 from "../Static/images/picture-of-me-nutritionsda.jpg"
 import image2 from "../Static/images/new-website-benefits-frame-1-e1628729923231.png"
+import { SyncLoader } from "react-spinners";
 import '../CSSFiles/home.css'
 import '../CSSFiles/header.css'
 import '../CSSFiles/footer.css'

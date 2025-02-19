@@ -2,6 +2,9 @@ import React, {useState} from "react";
 import { Form, Button} from "react-bootstrap"
 import axios from "axios";
 import '../CSSFiles/home.css'
+import { SyncLoader } from "react-spinners";
+
+
 
 function HomeForm() {
 //useState hook = define state variables in functional components
@@ -16,6 +19,9 @@ function HomeForm() {
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
     const [message, setMessage] = useState("");
+    const [loading, setLoading] = useState(false);  // State to manage loader visibility
+    const [clicked, setClicked] = useState(false)
+
 
     //function that gets called when user submits email
 
@@ -99,14 +105,26 @@ function HomeForm() {
     }
     */
 
+
+
     //function that gets called when the user submits the form
     const handleSubmit = async (e) => {
+
+        
         e.preventDefault();
-        alert('Email has been successfully sent, if you do not hear back within two days please email me at sdanutrition@nutritionsda.org...')
+
+        setClicked(true);
+
+        setLoading(true);
+        
+        alert('Please wait while we send this information over to SDA Nutrition. May take a minute...')
+        // alert('Email has been successfully sent, if you do not hear back within two days please email me at sdanutrition@nutritionsda.org...')
     
         // Validate form fields
         if (!email || !firstName || !lastName || !message) {
             alert("Please fill in all fields.");
+            setLoading(false);
+            setClicked(false);  // Reset clicked state
             return;
         }
     
@@ -129,6 +147,10 @@ function HomeForm() {
             if (response.ok) {
                 const data = await response.json();
                 console.log("Response data:", data);  // Log the entire response
+                
+                setLoading(false);
+
+                
                 if (data.message) {
                     console.log(data.message);
                     // alert("Email sent successfully!");
@@ -157,9 +179,16 @@ function HomeForm() {
             // Handle network errors
             console.error("Error sending email:", error);
             alert("An error occurred while sending the email.");
+            setLoading(false); // Ensure the loader stops in case of error
         }
+
+          // Reset the "clicked" state after a short delay (so the effect is visible)
+    setTimeout(() => {
+        setClicked(false);
+      }, 1000); // Button will revert after 1 second
     };
 
+    
 return (
                  
 
@@ -207,10 +236,26 @@ return (
                     />
                   </div>
                 </Form.Group>
+
+                      {/* Show loader when the form is being submitted */}
+      {loading && (
+        <div style={{ marginTop: '40px', display: 'flex', justifyContent: 'center' }}>
+          <SyncLoader size={20} color={"#43ace8"} loading={loading} />
+          <br />
+          <br />
+        </div>
+      )}
           
-                <Button id="submitform" variant="primary" type="submit">
-                  Submit
-                </Button>
+          <Button 
+        id="submitform" 
+        variant="primary" 
+        type="submit" 
+        disabled={loading}
+        className={clicked ? 'clicked' : ''}
+      >
+        Submit
+      </Button>
+
               </Form>
                 );
 }

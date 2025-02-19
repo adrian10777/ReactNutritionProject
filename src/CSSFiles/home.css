@@ -511,27 +511,25 @@
     padding: 11px 53px;
     background: #e00000;
     color: #ffffff;
-    float: auto;
     font-weight: bold;
     border-radius: 100px;
-    border: 50px;
+    border: 2px solid transparent; /* Changed border from 50px to 2px */
     margin-top: 40px;
+    transition: background 0.3s, color 0.3s, border 0.3s; /* Smooth transition for hover/focus */
   }
   
- 
-  
-  #submitform.focus,
-  #submitform:hover {
+  #submitform:focus, #submitform:hover {
     background-color: transparent;
     color: #43ace8;
     border: 1px solid #43ace8 !important;
     font-weight: bold;
   }
   
-  /* Restore red when focus/hover is removed */
-  #submitform:not(:hover) {
-    background-color: #e00000;
-    color: white;
+  /* Additional state for when the button is clicked and focused */
+  #submitform.clicked {
+    background-color: transparent;
+    color: #43ace8;
+    border: 1px solid #43ace8 !important;
   }
-
+  
   /* Home Form ^ */

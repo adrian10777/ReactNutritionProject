@@ -4,6 +4,7 @@ import { useContext, useState } from 'react';
 import '../CSSFiles/stripe.css';
 import { Navigate } from 'react-router-dom';
 import { DataContext } from '../context/DataProvider';
+import { SyncLoader } from "react-spinners";
 
 
 const CheckoutForm = props => {
