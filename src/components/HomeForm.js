@@ -192,71 +192,84 @@ function HomeForm() {
 return (
                  
 
-                <Form onSubmit={handleSubmit} id="form1home">
-                <Form.Group className="mb-3" controlId="formBasicEmail">
-                  <h1 id="homeformtitle">Contact Me</h1>
-                  <Form.Label>Email address</Form.Label>
-                  <Form.Control
-                    type="email"
-                    placeholder="Enter email"
-                    value={email} // bind input value to email state
-                    onChange={(e) => setEmail(e.target.value)} // update state on change
-                  />
-                </Form.Group>
+    //             <Form onSubmit={handleSubmit} id="form1home">
+    //             <Form.Group className="mb-3" controlId="formBasicEmail">
+    //               <h1 id="homeformtitle">Contact Me</h1>
+    //               <Form.Label>Email address</Form.Label>
+    //               <Form.Control
+    //                 type="email"
+    //                 placeholder="Enter email"
+    //                 value={email} // bind input value to email state
+    //                 onChange={(e) => setEmail(e.target.value)} // update state on change
+    //               />
+    //             </Form.Group>
           
-                <Form.Group className="mb-3" controlId="formBasicPassword">
-                  <Form.Label>First Name</Form.Label>
-                  <Form.Control
-                    type="text"
-                    placeholder="Enter your first name"
-                    value={firstName}
-                    onChange={(e) => setFirstName(e.target.value)}
-                  />
-                </Form.Group>
+    //             <Form.Group className="mb-3" controlId="formBasicPassword">
+    //               <Form.Label>First Name</Form.Label>
+    //               <Form.Control
+    //                 type="text"
+    //                 placeholder="Enter your first name"
+    //                 value={firstName}
+    //                 onChange={(e) => setFirstName(e.target.value)}
+    //               />
+    //             </Form.Group>
           
-                <Form.Group className="mb-3" controlId="formBasicPassword">
-                  <Form.Label>Last Name</Form.Label>
-                  <Form.Control
-                    type="text"
-                    placeholder="Enter your last name"
-                    value={lastName}
-                    onChange={(e) => setLastName(e.target.value)}
-                  />
-                </Form.Group>
+    //             <Form.Group className="mb-3" controlId="formBasicPassword">
+    //               <Form.Label>Last Name</Form.Label>
+    //               <Form.Control
+    //                 type="text"
+    //                 placeholder="Enter your last name"
+    //                 value={lastName}
+    //                 onChange={(e) => setLastName(e.target.value)}
+    //               />
+    //             </Form.Group>
           
-                <Form.Group className="mb-3" controlId="formBasicMessage">
-                  <Form.Label>Message</Form.Label>
-                  <div className="form-group">
-                    <textarea
-                      className="form-control"
-                      rows="7"
-                      placeholder="Write your message here"
-                      value={message}
-                      onChange={(e) => setMessage(e.target.value)}
-                    />
-                  </div>
-                </Form.Group>
+    //             <Form.Group className="mb-3" controlId="formBasicMessage">
+    //               <Form.Label>Message</Form.Label>
+    //               <div className="form-group">
+    //                 <textarea
+    //                   className="form-control"
+    //                   rows="7"
+    //                   placeholder="Write your message here"
+    //                   value={message}
+    //                   onChange={(e) => setMessage(e.target.value)}
+    //                 />
+    //               </div>
+    //             </Form.Group>
 
-                      {/* Show loader when the form is being submitted */}
-      {loading && (
-        <div style={{ marginTop: '40px', display: 'flex', justifyContent: 'center' }}>
-          <SyncLoader size={20} color={"#43ace8"} loading={loading} />
-          <br />
-          <br />
-        </div>
-      )}
+    //                   {/* Show loader when the form is being submitted */}
+    //   {loading && (
+    //     <div style={{ marginTop: '40px', display: 'flex', justifyContent: 'center' }}>
+    //       <SyncLoader size={20} color={"#43ace8"} loading={loading} />
+    //       <br />
+    //       <br />
+    //     </div>
+    //   )}
           
-          <Button 
-        id="submitform" 
-        variant="primary" 
-        type="submit" 
-        disabled={loading}
-        className={clicked ? 'clicked' : ''}
-      >
-        Submit
-      </Button>
+    //       <Button 
+    //     id="submitform" 
+    //     variant="primary" 
+    //     type="submit" 
+    //     disabled={loading}
+    //     className={clicked ? 'clicked' : ''}
+    //   >
+    //     Submit
+    //   </Button>
 
-              </Form>
+    //           </Form>
+
+
+    <Form onSubmit={handleSubmit} id="form1home">
+    <Form.Group className="mb-3" controlId="formBasicEmail">
+      <h1 id="homeformtitle">Contact Me</h1>
+    </Form.Group>
+
+    <Form.Group className="mb-3" controlId="formBasicEmail">
+      <h3 >Please send me an email to:</h3>
+      <br />
+      <h3 ><a href="mailto:sdanutrition@nutritionsda.com">sdanutrition@nutritionsda.com</a></h3>
+    </Form.Group>
+  </Form>
                 );
 }
 
