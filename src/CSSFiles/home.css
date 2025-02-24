@@ -471,6 +471,14 @@
       margin-top: 50px;
     }
   }
+
+  .middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Ensure the text inside is centered */
+  }
   
    /* form css */
   #form1home{

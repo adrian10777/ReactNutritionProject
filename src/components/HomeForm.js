@@ -260,16 +260,18 @@ return (
 
 
     <Form onSubmit={handleSubmit} id="form1home">
-    <Form.Group className="mb-3" controlId="formBasicEmail">
+    <div className="middle">
       <h1 id="homeformtitle">Contact Me</h1>
-    </Form.Group>
+    </div>
 
-    <Form.Group className="mb-3" controlId="formBasicEmail">
+    <div className="middle">
       <h3 >Please send me an email to:</h3>
       <br />
+      <br />
       <h3 ><a href="mailto:sdanutrition@nutritionsda.com">sdanutrition@nutritionsda.com</a></h3>
-    </Form.Group>
+    </div>
   </Form>
+
                 );
 }
 
