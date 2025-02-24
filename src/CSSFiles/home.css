@@ -484,14 +484,23 @@
     padding-left: 40px;
   }
   
-  @media (max-width: 640px) {
+  /* for contact form
+   @media (max-width: 640px) {
     #form1home{
       margin-top: 175px;
       width: 90%;
 
     }
-  }
+  } */
 
+  /* for simple form */
+  @media (max-width: 640px) {
+    #form1home{
+      margin-top: 175px;
+      width: 100%;
+      padding-bottom: 100px;
+    }
+  }
 
 
 
