@@ -22,20 +22,21 @@ const Services = props => {
 
     /* build api call to get programs */
     //makes api call
-    const getProgramData = async () => {
-        try { 
-            let response = await axios.get('https://sdanutrition.fly.dev/api/programs')
-        //if you do not control api or u are preparing this for a production environment 
-        // you should build error handling into this api cal
-        //check if u are getting 200 repsonse code and have backup plan if u dont
-        //because we control this api and are still developing this react app, i am keeping this api call simple
-        // and ignoring error handling/headers/messages, etc, other stuff u might need in production env
-        return response.data
-        } catch (error) {
-            alert('Error getting services');
-            setLoading(false);
-        }
-    } 
+
+    // const getProgramData = async () => {
+    //     try { 
+    //         let response = await axios.get('https://sdanutrition.fly.dev/api/programs')
+    //     //if you do not control api or u are preparing this for a production environment 
+    //     // you should build error handling into this api cal
+    //     //check if u are getting 200 repsonse code and have backup plan if u dont
+    //     //because we control this api and are still developing this react app, i am keeping this api call simple
+    //     // and ignoring error handling/headers/messages, etc, other stuff u might need in production env
+    //     return response.data
+    //     } catch (error) {
+    //         alert('Error getting services');
+    //         setLoading(false);
+    //     }
+    // } 
 
     // using api data as a state variable
     //where do u call this?
@@ -43,16 +44,16 @@ const Services = props => {
     //react will assume any function starting with use is a hook and will therefore treat it diff
 
     //responsible for setting state of programs to be this program data we are going to get
-    const loadProgramData = async () => {
-        let data = await getProgramData();
-        console.log(data);
-        setPrograms(data);
-        setLoading(false);
-    }
+    // const loadProgramData = async () => {
+    //     let data = await getProgramData();
+    //     console.log(data);
+    //     setPrograms(data);
+    //     setLoading(false);
+    // }
 
-    useEffect(() => {
-            loadProgramData();
-    }, []); //empty dependency array ensures this runs once when component mounts
+    // useEffect(() => {
+    //         loadProgramData();
+    // }, []); //empty dependency array ensures this runs once when component mounts
 
     // new state variable for the service component
     const [loading, setLoading] = useState(true);
@@ -89,55 +90,55 @@ const Services = props => {
     }
 
 
-const [servicesPhases, setServicesPhases] = useState({
-        HTTOAVGP1: ``,
-})
+// const [servicesPhases, setServicesPhases] = useState({
+//         HTTOAVGP1: ``,
+// })
 
-const [servicesPhases2, setServicesPhases2] = useState({
-    HTTOAVGP2: ``,
-})
+// const [servicesPhases2, setServicesPhases2] = useState({
+//     HTTOAVGP2: ``,
+// })
 
-const [servicesPhases3, setServicesPhases3] = useState({
-    HTTOAVGP3: ``,
-})
+// const [servicesPhases3, setServicesPhases3] = useState({
+//     HTTOAVGP3: ``,
+// })
 
-const [servicesPhases4, setServicesPhases4] = useState({
-    HTTOAVGP4: ``,
-})
+// const [servicesPhases4, setServicesPhases4] = useState({
+//     HTTOAVGP4: ``,
+// })
 
-const [servicesPhases5, setServicesPhases5] = useState({
-    HTTOAVGP5: ``,
-})
-const [servicesPhases6, setServicesPhases6] = useState({
-    HTTOAVGP6: ``,
-})
-const [servicesPhases7, setServicesPhases7] = useState({
-    HTTOAVGP7: ``,
-})
-const [servicesPhases8, setServicesPhases8] = useState({
-    HTTOAVGP8: ``,
-})
-const [servicesPhases9, setServicesPhases9] = useState({
-    HTTOAVGP9: ``,
-})
-const [servicesPhases10, setServicesPhases10] = useState({
-    HTTOAVGP10: ``,
-})
-const [servicesPhases11, setServicesPhases11] = useState({
-    HTTOAVGP11: ``,
-})
+// const [servicesPhases5, setServicesPhases5] = useState({
+//     HTTOAVGP5: ``,
+// })
+// const [servicesPhases6, setServicesPhases6] = useState({
+//     HTTOAVGP6: ``,
+// })
+// const [servicesPhases7, setServicesPhases7] = useState({
+//     HTTOAVGP7: ``,
+// })
+// const [servicesPhases8, setServicesPhases8] = useState({
+//     HTTOAVGP8: ``,
+// })
+// const [servicesPhases9, setServicesPhases9] = useState({
+//     HTTOAVGP9: ``,
+// })
+// const [servicesPhases10, setServicesPhases10] = useState({
+//     HTTOAVGP10: ``,
+// })
+// const [servicesPhases11, setServicesPhases11] = useState({
+//     HTTOAVGP11: ``,
+// })
 
-    const [buttonClicked1, setButtonClicked1] = useState(false)
-    const [buttonClicked2, setButtonClicked2] = useState(false)
-    const [buttonClicked3, setButtonClicked3] = useState(false)
-    const [buttonClicked4, setButtonClicked4] = useState(false)
-    const [buttonClicked5, setButtonClicked5] = useState(false)
-    const [buttonClicked6, setButtonClicked6] = useState(false)
-    const [buttonClicked7, setButtonClicked7] = useState(false)
-    const [buttonClicked8, setButtonClicked8] = useState(false)
-    const [buttonClicked9, setButtonClicked9] = useState(false)
-    const [buttonClicked10, setButtonClicked10] = useState(false)
-    const [buttonClicked11, setButtonClicked11] = useState(false)
+    // const [buttonClicked1, setButtonClicked1] = useState(false)
+    // const [buttonClicked2, setButtonClicked2] = useState(false)
+    // const [buttonClicked3, setButtonClicked3] = useState(false)
+    // const [buttonClicked4, setButtonClicked4] = useState(false)
+    // const [buttonClicked5, setButtonClicked5] = useState(false)
+    // const [buttonClicked6, setButtonClicked6] = useState(false)
+    // const [buttonClicked7, setButtonClicked7] = useState(false)
+    // const [buttonClicked8, setButtonClicked8] = useState(false)
+    // const [buttonClicked9, setButtonClicked9] = useState(false)
+    // const [buttonClicked10, setButtonClicked10] = useState(false)
+    // const [buttonClicked11, setButtonClicked11] = useState(false)
 
 //     const httoavgp = {
 //     HTTOAVGP1: {
@@ -150,218 +151,218 @@ const [servicesPhases11, setServicesPhases11] = useState({
 //     }
 // }
 
-    const alertFunction = () => {
-        alert("Check cart!")
-    }
+    // const alertFunction = () => {
+    //     alert("Check cart!")
+    // }
 
-    const buttonChange = () => {
-        setButtonClicked1(prevState => !prevState)
+    // const buttonChange = () => {
+    //     setButtonClicked1(prevState => !prevState)
     
-        if (buttonClicked1){
+    //     if (buttonClicked1){
             
-            setServicesPhases({
-                HTTOAVGP1: ``
-            })
-        }
-        else {
-            setServicesPhases({
-                HTTOAVGP1: <ul className="servicesbullets">
-                <li className="bulletpoints">Introduction to program</li>
-                <li className="bulletpoints">What are we designed to eat</li>
-                <li className="bulletpoints">What happens when we are not designed to eat</li>
-                <li className="bulletpoints">How to deal with conflicting studies</li>
-                <li className="bulletpoints">How to read a scientific study</li>
-                </ul>
-            })
-        }
-    }
+    //         setServicesPhases({
+    //             HTTOAVGP1: ``
+    //         })
+    //     }
+    //     else {
+    //         setServicesPhases({
+    //             HTTOAVGP1: <ul className="servicesbullets">
+    //             <li className="bulletpoints">Introduction to program</li>
+    //             <li className="bulletpoints">What are we designed to eat</li>
+    //             <li className="bulletpoints">What happens when we are not designed to eat</li>
+    //             <li className="bulletpoints">How to deal with conflicting studies</li>
+    //             <li className="bulletpoints">How to read a scientific study</li>
+    //             </ul>
+    //         })
+    //     }
+    // }
     
-    const buttonChange2 = () => {
-        setButtonClicked2(prevState => !prevState)
+    // const buttonChange2 = () => {
+    //     setButtonClicked2(prevState => !prevState)
     
-        if (buttonClicked2){
-            setServicesPhases2({HTTOAVGP2: ``
-        })
+    //     if (buttonClicked2){
+    //         setServicesPhases2({HTTOAVGP2: ``
+    //     })
     
-        }
-        else {
-            setServicesPhases2({
-                HTTOAVGP2: `Introduction To Program/ What Are We Designed To Eat/ What Happens When We Eat What We Should Not?/ How To Deal With Conflicting Studies/ How To Read A Scientific Study`
-            })
-        }
-    }
+    //     }
+    //     else {
+    //         setServicesPhases2({
+    //             HTTOAVGP2: `Introduction To Program/ What Are We Designed To Eat/ What Happens When We Eat What We Should Not?/ How To Deal With Conflicting Studies/ How To Read A Scientific Study`
+    //         })
+    //     }
+    // }
     
-    const buttonChange3 = () => {
-        setButtonClicked3(prevState => !prevState)
-        if (buttonClicked3){
-            setServicesPhases3({
-                HTTOAVGP3: ``
-            })
-        }
-        else {
-            setServicesPhases3({
-                HTTOAVGP3: 
-                <ul className="servicesbullets">
-                <li className="bulletpoints">Learn about nuts/seeds, grains, fruits, legumes, and others</li>
-                <li className="bulletpoints">Are meat alternatives healthy?</li>
-                </ul>
-            })
-        }
-    }
+    // const buttonChange3 = () => {
+    //     setButtonClicked3(prevState => !prevState)
+    //     if (buttonClicked3){
+    //         setServicesPhases3({
+    //             HTTOAVGP3: ``
+    //         })
+    //     }
+    //     else {
+    //         setServicesPhases3({
+    //             HTTOAVGP3: 
+    //             <ul className="servicesbullets">
+    //             <li className="bulletpoints">Learn about nuts/seeds, grains, fruits, legumes, and others</li>
+    //             <li className="bulletpoints">Are meat alternatives healthy?</li>
+    //             </ul>
+    //         })
+    //     }
+    // }
     
-    const buttonChange4 = () => {
-        setButtonClicked4(prevState => !prevState)
-        if (buttonClicked4){
-            setServicesPhases4({
-                HTTOAVGP4: ``
-            })
-        }
-        else {
-            setServicesPhases4({
-                HTTOAVGP4: 
-                <ul className="servicesbullets">
-                <li className="bulletpoints">Uncover myths of a vegan diet and nutrients of concern</li>
-                <li className="bulletpoints">How go get all your needed macronutrients and micronutrients</li>
-                <li className="bulletpoints">Food chemicals and additives</li>
-                </ul>
-        })
-    }
-    }
+    // const buttonChange4 = () => {
+    //     setButtonClicked4(prevState => !prevState)
+    //     if (buttonClicked4){
+    //         setServicesPhases4({
+    //             HTTOAVGP4: ``
+    //         })
+    //     }
+    //     else {
+    //         setServicesPhases4({
+    //             HTTOAVGP4: 
+    //             <ul className="servicesbullets">
+    //             <li className="bulletpoints">Uncover myths of a vegan diet and nutrients of concern</li>
+    //             <li className="bulletpoints">How go get all your needed macronutrients and micronutrients</li>
+    //             <li className="bulletpoints">Food chemicals and additives</li>
+    //             </ul>
+    //     })
+    // }
+    // }
     
-    const buttonChange5 = () => {
-        setButtonClicked5(prevState => !prevState)
-        if (buttonClicked5){
-            setServicesPhases5({
-                HTTOAVGP5: ``
-            })
-        }
-        else {
-            setServicesPhases5({
-                HTTOAVGP5: 
-                <ul className="servicesbullets">
-                <li className="bulletpoints">Food combinations to enhance your nutrient intake</li>
-                <li className="bulletpoints">Vitamin/mineral combinations to increase absorption</li>
-                <li className="bulletpoints">World's healthiest foods</li>
-                <li className="bulletpoints">How to save money</li>
-                </ul>
-        })
-        }
-    }
+    // const buttonChange5 = () => {
+    //     setButtonClicked5(prevState => !prevState)
+    //     if (buttonClicked5){
+    //         setServicesPhases5({
+    //             HTTOAVGP5: ``
+    //         })
+    //     }
+    //     else {
+    //         setServicesPhases5({
+    //             HTTOAVGP5: 
+    //             <ul className="servicesbullets">
+    //             <li className="bulletpoints">Food combinations to enhance your nutrient intake</li>
+    //             <li className="bulletpoints">Vitamin/mineral combinations to increase absorption</li>
+    //             <li className="bulletpoints">World's healthiest foods</li>
+    //             <li className="bulletpoints">How to save money</li>
+    //             </ul>
+    //     })
+    //     }
+    // }
     
-    const buttonChange6 = () => {
-        setButtonClicked6(prevState => !prevState)
-        if (buttonClicked6){
-            setServicesPhases6({
-                HTTOAVGP6: ``
-            })
-        }
-        else {
-            setServicesPhases6({
-                HTTOAVGP6: 
-                <ul className="servicesbullets">
-                <li className="bulletpoints">Gut microbiome</li>
-                </ul>
-        })
-        }
+    // const buttonChange6 = () => {
+    //     setButtonClicked6(prevState => !prevState)
+    //     if (buttonClicked6){
+    //         setServicesPhases6({
+    //             HTTOAVGP6: ``
+    //         })
+    //     }
+    //     else {
+    //         setServicesPhases6({
+    //             HTTOAVGP6: 
+    //             <ul className="servicesbullets">
+    //             <li className="bulletpoints">Gut microbiome</li>
+    //             </ul>
+    //     })
+    //     }
         
-    }
+    // }
     
-    const buttonChange7 = () => {
-        setButtonClicked7(prevState => !prevState)
-        if (buttonClicked7){
-            setServicesPhases7({
-                HTTOAVGP7: ``
-            })
-        }
-        else {
-            setServicesPhases7({
-                HTTOAVGP7: 
-                <ul className="servicesbullets">
-                <li className="bulletpoints">Sprouting/ Canning/ Freezing</li>
-                <li className="bulletpoints">Meal Planning</li>
-                <li className="bulletpoints">Fasting</li>
-                <li className="bulletpoints">Food Safety</li>
-                <li className="bulletpoints">Does organic matter?</li>
-                </ul>
-        })
-        }
-    }
+    // const buttonChange7 = () => {
+    //     setButtonClicked7(prevState => !prevState)
+    //     if (buttonClicked7){
+    //         setServicesPhases7({
+    //             HTTOAVGP7: ``
+    //         })
+    //     }
+    //     else {
+    //         setServicesPhases7({
+    //             HTTOAVGP7: 
+    //             <ul className="servicesbullets">
+    //             <li className="bulletpoints">Sprouting/ Canning/ Freezing</li>
+    //             <li className="bulletpoints">Meal Planning</li>
+    //             <li className="bulletpoints">Fasting</li>
+    //             <li className="bulletpoints">Food Safety</li>
+    //             <li className="bulletpoints">Does organic matter?</li>
+    //             </ul>
+    //     })
+    //     }
+    // }
     
-    const buttonChange8 = () => {
-        setButtonClicked8(prevState => !prevState)
-        if (buttonClicked8){
-            setServicesPhases8({
-                HTTOAVGP8: ``
-            })
-        }
-        else {
-            setServicesPhases8({
-                HTTOAVGP8: `  Why being vegan matters/ W A N T E R S (Eight laws of health), Handouts`
-            })
-        }
-    }
-    const buttonChange9 = () => {
-        setButtonClicked9(prevState => !prevState)
-        if (buttonClicked9){
-            setServicesPhases9({
-                HTTOAVGP9: ``
-            })
-        }
-        else {
-            setServicesPhases9({
-                HTTOAVGP9: ` Personalized Meal Plan`
-            })
-        }
-    }
+    // const buttonChange8 = () => {
+    //     setButtonClicked8(prevState => !prevState)
+    //     if (buttonClicked8){
+    //         setServicesPhases8({
+    //             HTTOAVGP8: ``
+    //         })
+    //     }
+    //     else {
+    //         setServicesPhases8({
+    //             HTTOAVGP8: `  Why being vegan matters/ W A N T E R S (Eight laws of health), Handouts`
+    //         })
+    //     }
+    // }
+    // const buttonChange9 = () => {
+    //     setButtonClicked9(prevState => !prevState)
+    //     if (buttonClicked9){
+    //         setServicesPhases9({
+    //             HTTOAVGP9: ``
+    //         })
+    //     }
+    //     else {
+    //         setServicesPhases9({
+    //             HTTOAVGP9: ` Personalized Meal Plan`
+    //         })
+    //     }
+    // }
     
 
-    const buttonChange10 = () => {
-        setButtonClicked10(prevState => !prevState)
-        if (buttonClicked10){
-            setServicesPhases10({
-                HTTOAVGP10: ``
-            })
-        }
-        else {
-            setServicesPhases10({
-                HTTOAVGP10: ` 5, 15-30 Minute Follow ups`
-            })
-        }
-    }
+    // const buttonChange10 = () => {
+    //     setButtonClicked10(prevState => !prevState)
+    //     if (buttonClicked10){
+    //         setServicesPhases10({
+    //             HTTOAVGP10: ``
+    //         })
+    //     }
+    //     else {
+    //         setServicesPhases10({
+    //             HTTOAVGP10: ` 5, 15-30 Minute Follow ups`
+    //         })
+    //     }
+    // }
 
-    const buttonChange11 = () => {
-        setButtonClicked11(prevState => !prevState)
-        if (buttonClicked11){
-            setServicesPhases11({
-                HTTOAVGP11: ``
-            })
-        }
-        else {
-            setServicesPhases11({
-                HTTOAVGP11: ` Private Group For Your Questions For 1 year`
-            })
-        }
-    }
+    // const buttonChange11 = () => {
+    //     setButtonClicked11(prevState => !prevState)
+    //     if (buttonClicked11){
+    //         setServicesPhases11({
+    //             HTTOAVGP11: ``
+    //         })
+    //     }
+    //     else {
+    //         setServicesPhases11({
+    //             HTTOAVGP11: ` Private Group For Your Questions For 1 year`
+    //         })
+    //     }
+    // }
 
     // elephantsql
     // 1. browser
     // 2. SELECT * FROM program
 
-    if (loading) {
-        return   <div style={{ marginTop: '150px' }}>
-        <SyncLoader size={20} color={"#43ace8"} loading={loading} />
-      </div>
-    }
+    // if (loading) {
+    //     return   <div style={{ marginTop: '150px' }}>
+    //     <SyncLoader size={20} color={"#43ace8"} loading={loading} />
+    //   </div>
+    // }
 
 
     return (
         //form 1
-        <>
-            {/* <h1 id="servicestitle">Services</h1> */}
+        // <>
+        //     {/* <h1 id="servicestitle">Services</h1> */}
 
-            {
-                program ?
-                    <>
+        //     {
+        //         program ?
+        //             <>
                         <Container className="Container-margin">
                             {/* <Carousel fade={true} className="carousel"> */}
                                 {/* <Carousel.Item interval={100000000}> */}
@@ -426,10 +427,10 @@ const [servicesPhases11, setServicesPhases11] = useState({
                                         <Col>
                                             <Form className="serviceform">
                                             <div className="cardheight card card-pricing popular shadow text-center px-5 mb-4">
-                                                    <span style={{ backgroundColor: "#43ace8" }} className="h5 w-60 mx-auto px-5 py-2 rounded-bottom text-white shadow-sm" id="servicestitle">{`${program[5].program_name}`}</span>
+                                                    <span style={{ backgroundColor: "#43ace8" }} className="h5 w-60 mx-auto px-5 py-2 rounded-bottom text-white shadow-sm" id="servicestitle">How To Thrive On A Vegan Diet</span>
                                                     <div className="bg-transparent card-header pt-4 border-0">
                                                         <h1 className="h1 font-weight-bold text-center mb-0" id="serviceprice" data-pricing-value="45"><span
-                                                            className="price">{`${program[5].program_cost}`}</span><span className="h6 text-muted ml-2"></span></h1>
+                                                            className="price">$2000</span><span className="h6 text-muted ml-2"></span></h1>
                                                         <h6 className="h5 font-weight-bold text-center mb-0" id="serviceprice" >OR</h6>
                                                         <h1 className="h1 font-weight-bold text-center mb-0" id="serviceprice" data-pricing-value="45">$<span
                                                             className="price">110</span><span className="h6 text-muted ml-2">/ per month (10)</span></h1>
@@ -688,11 +689,11 @@ const [servicesPhases11, setServicesPhases11] = useState({
                                 
                             {/* </ Carousel> */}
                         </Container>
-                    </>
-                    :
-                    <p></p>
-            }
-        </>
+        //             </>
+        //             :
+        //             <p></p>
+        //     }
+        // </>
     )
 }
 

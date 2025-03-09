@@ -13,6 +13,7 @@ import Services from './views/Services';
 import Blogs from './views/Blogs';
 import Blog1 from './views/Blog1';
 import About from './views/About';
+import Questions from './views/Questions'
 import Donate from './views/Donate';
 import Cart from './views/Cart';
 import ComingSoonBlog from './views/ComingSoonBlog';
@@ -92,6 +93,7 @@ const App = () => {
         <Route children path='/blog1' element={<Blog1 />} />
         <Route children path='ComingSoonBlog' element={<ComingSoonBlog />} />
         <Route children path='/about' element={<About />} />
+        <Route children path='/Questions' element={<Questions />} />
         {/* <Route children path='/donate' element={<Donate cart={cart} setCart={setCart} />} /> */}
         <Route children path='/cart' element={<Cart cart={cart} setCart={setCart} />} />
         <Route children path='/checkout' element={<Checkout cart={cart} setCart={setCart} />} />

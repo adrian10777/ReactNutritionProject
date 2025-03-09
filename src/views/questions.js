@@ -15,34 +15,24 @@ const Questions = props => {
 
 
     return (
-        <div className='About'>
-            <Container id="about-container">
-                <Row>
-                    <Col>
-                        {/* <img id="picaboutme" src={image3} alt="aboutmepicture"></img> */}
-                        <img id="picaboutme" src={image1} alt="aboutmepicture" />
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        <p id="aboutp1"> Hi! My name is Adrian Henriquez, and I’m passionate about helping others transition to a vegan diet so they can become their best selves. Switching to a vegan lifestyle can often help prevent or even heal many of today’s prevalent diseases. However, with so much misinformation out there, you may feel overwhelmed or unsure of where to begin. I understand—because I’ve been there myself. My own transition was a bumpy road, but through dedication and experience, I’ve discovered the best ways to transition successfully and maintain long-term success. If you’re ready to go vegan and transform your health, I’m here to make the process smooth and sustainable. I can’t wait to work with you—see you on the other side!</p>
-                    </Col>
-                </Row>
-                <Row>
-                    <h1 id="title3">MY CREDENTIALS</h1>
-                </Row>
-                <Row>
-                    <Col>
-                        <img src={imagebachelors} id="bachelors" alt="bachelorslogo"></img>
-                    </Col>
-                    <Col>
-                        <img src={imageclt} id="clt" alt="CLT"></img>
-                    </Col>
-                    <Col>
-                     <img src={imagendtr} id="ndtr" alt="NDTR"></img>
-                    </Col>
-                </Row>
-                
+        <div className='Questions'>
+            <Container id="question-container">
+            <h1 id = "title1">Questions for How To Thrive On A Vegan Diet:</h1>
+            <br />
+            <h3 class = 'bold'>What is contained in this program?</h3>
+            <ul class="bullets">
+                <li>Learn how to discern through the confusion, and about studies. (2 sessions)</li>
+                <li>Learn what we are designed to eat. (4 sessions)</li>
+                <li>Learn about all the food groups. (6 sessions)</li>
+                <li>Dispel myths about the vegan diet. (4 sessions)</li>
+                <li>Getting all of the nutrients you need. (6 sessions)</li>
+                <li>Food Safety. (1 session)</li>
+            </ul>           
+            <br />
+            <p>* Each session is around an hour.</p> 
+
+            <h3 class = 'bold'>What does the meal plan consist of?</h3>
+            <p></p>
             </Container>
         </div>
         )}

@@ -23,7 +23,7 @@
     "react-redux": "^7.2.6",
     "react-responsive-carousel": "^3.2.22",
     "react-router-dom": "^6.2.1",
-    "react-scripts": "^3.0.1",
+    "react-scripts": "^5.0.1",
     "react-spinners": "^0.15.0",
     "reactfire": "^4.2.1",
     "tslib": "^2.3.1",
